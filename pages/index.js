@@ -1,65 +1,55 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import NextLink from 'next/link'
+
+import { Box,Text, Link, VStack, Stack, Container, Image, Heading} from "@chakra-ui/react"
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Philipp Reiner</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+      <Container maxWidth="54em" maxW="xl">
+        <Box pt={["32px","48px","72px","86px"]}>
+          <Image
+            borderRadius="12px"
+            boxSize={["72px","128px","144px"]}
+            src="static/philipp-reiner.jpg"
+            alt="Segun Adebayo"
+          />
+          <Box pt="24px">
+            <Heading fontWeight="500" as="h1" size="lg">
+            <Text as="span" color="primary">Philipp Reiner</Text> ist Experte für neue Geschäftsmodelle und Innovation. Ich kombiniere Strategie, User Experience und Software und ermögliche dadurch die digitale Zukunft.
+            </Heading>
+          </Box>
+          <Box pt="24px">
+            <Stack direction={["column", "row"]} spacing="12px">
+            <Link color="blue.500" href="mailto:hey@philippreiner.info">
+                hey@philippreiner.info
+              </Link>
+              <Link isExternal color="blue.500" href="https://www.linkedin.com/in/philippreiner/">
+                LinkedIn
+              </Link>
+              <Link isExternal color="blue.500" href="https://www.twitter.com/reiner">
+                Twitter
+              </Link>
+              <Link isExternal color="blue.500" href="https://www.planb.net">
+                Arbeit
+              </Link>
+            </Stack>
+          </Box>
+        </Box>
+        <Box pt="24px">
+          <NextLink as="Link" href="posts/first-post">
+              <Link>
+                <Box bg="gray.50" p="10px" borderRadius="6px" mb="12px">
+                  Das ist eine Box
+                </Box>
+              </Link>
+            </NextLink>
+        </Box>
+      </Container>
     </div>
   )
 }
