@@ -16,7 +16,7 @@ export default function Home() {
             borderRadius="12px"
             boxSize={["72px","128px","144px"]}
             src="static/philipp-reiner.jpg"
-            alt="Segun Adebayo"
+            alt="Philipp Reiner"
           />
           <Box pt="24px">
             <Heading fontWeight="500" as="h1" size="lg">
@@ -41,13 +41,15 @@ export default function Home() {
           </Box>
         </Box>
         <Box pt="24px">
-          <NextLink as="Link" href="posts/first-post">
-              <Link>
+          
+             <NextLink href="/posts/first-post" passHref>
+               <Link>
                 <Box bg="gray.50" p="10px" borderRadius="6px" mb="12px">
                   Das ist eine Box
                 </Box>
-              </Link>
+                </Link>
             </NextLink>
+       
         </Box>
       </Container>
     </div>
