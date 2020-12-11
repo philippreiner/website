@@ -44,10 +44,10 @@ export default function Home() {
       </Container>
       <Container maxWidth="58em" maxW="xl">
           <Grid  pt="24px" templateColumns={["1fr",null,"1fr 1fr"]} gap="24px">
-            <GridItem colSpan={[1,null,2]} boxShadow="lg" minHeight={[null,"200px","400px"]} color="white" p="24px" bg="linear-gradient(to right, #b92b27, #1565c0)" borderRadius="4px">
+            <GridItem colSpan={[1,null,2]}  boxShadow="lg" minHeight={[null,"200px","400px"]} color="white" p="24px" bg="linear-gradient(to right, #b92b27, #1565c0)" borderRadius="4px">
               Content
             </GridItem>
-            <GridItem boxShadow="lg" minHeight={[null,"200px","300px"]} color="white" p="24px" bg="linear-gradient(to right, #0f2027, #203a43, #2c5364)" borderRadius="4px">
+            <GridItem boxShadow="lg"  minHeight={[null,"200px","300px"]} color="white" p="24px" borderRadius="4px">
               Content
             </GridItem>
             <GridItem boxShadow="lg" minHeight={[null,"200px","300px"]} color="white" p="24px" bg="linear-gradient(to right, #0f2027, #203a43, #2c5364)" borderRadius="4px">
