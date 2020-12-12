@@ -16,7 +16,7 @@ export default function Layout({ children }) {
 
       {children}
 
-      <Box textAlign="center" pt={[4, 8]} pb={[4, 12]}>
+      <Box textAlign="center" pt={[4, 8]} pb={[12, 12]}>
         <NextLink href="/impressum" passHref>
           <Link color="gray.500">Impressum & Datenschutz</Link>
         </NextLink>

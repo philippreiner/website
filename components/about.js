@@ -14,7 +14,7 @@ export default function About({ children }) {
       bg="gray.100"
       p={[8, 12]}
     >
-      <Flex>
+      <Flex direction={["column",null,"row"]} >
         <Box mr="4" boxSize={["48px", "64px", "120px"]}>
           <NextImage
             width="120"
