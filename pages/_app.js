@@ -19,6 +19,9 @@ const theme = extendTheme({
     medium: 500,
     bold: 900,
   },
+  fontSizes: {
+    md: "18px"
+  }
 })
 
 function App({ Component, pageProps }) {

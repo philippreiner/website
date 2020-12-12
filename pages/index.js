@@ -3,6 +3,7 @@ import NextLink from "next/link";
 import NextImage from "next/image";
 import { getSortedPostsData } from '../lib/posts'
 import Layout from '../components/layout'
+import Links from '../components/links'
 
 import {
   Box,
@@ -25,7 +26,7 @@ export async function getStaticProps() {
 export default function Home({ allPostsData }) {
   return (
     <Layout>
-      <Container maxWidth="53em" maxW="xl">
+      <Container maxWidth="46em" maxW="xl">
         <Box>
           <Box borderRadius="12px" boxSize={["72px", "128px", "160px"]}>
             <NextImage
@@ -42,34 +43,13 @@ export default function Home({ allPostsData }) {
               <Text as="span" color="primary">
                 Philipp Reiner
               </Text>{" "}
-              ist Experte für neue, innovative Geschäftsmodelle. Ich kombiniere
+              ist Experte für innovative Geschäftsmodelle. Ich kombiniere
               Strategie, User Experience und Software um die digitale Zukunft zu
               gestalten.
             </Heading>
           </Box>
           <Box pt="24px">
-            <Stack direction={["column", "row"]} spacing="12px">
-              <Link color="blue.500" href="mailto:hey@philippreiner.info">
-                hey@philippreiner.info
-              </Link>
-              <Link
-                isExternal
-                color="blue.500"
-                href="https://www.linkedin.com/in/philippreiner/"
-              >
-                LinkedIn
-              </Link>
-              <Link
-                isExternal
-                color="blue.500"
-                href="https://www.twitter.com/reiner"
-              >
-                Twitter
-              </Link>
-              <Link isExternal color="blue.500" href="https://www.planb.net">
-                Arbeit
-              </Link>
-            </Stack>
+            <Links></Links>
           </Box>
         </Box>
 

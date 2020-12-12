@@ -6,7 +6,7 @@ import { Link, Text, HStack, Container, Box } from "@chakra-ui/react";
 
 export default function Page({ children }) {
   return (
-    <Container maxWidth="42em" maxW="xl">
+    <Container maxWidth="40em" maxW="xl">
       <Box mb={[2, 4]}>
         <NextLink href="/" passHref>
           <Link>

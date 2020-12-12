@@ -1,0 +1,44 @@
+.content p {
+   padding-bottom: .5em; 
+   line-height:1.7;
+}
+.content h1, .content h2, .content h3, .content h4 {
+    font-weight:bold;
+    padding-top: .5em;
+    padding-bottom:.25em;
+}
+.content h1, .content h2 {
+    font-size:24px;
+}
+@media (min-width:40em) {
+    .content h1, .content h2 {
+        font-size:32px;
+    }
+}
+.content h3, .content h4 {
+    font-size:24px;
+}
+.content ul, .content ol {
+    margin-left:1em;
+    padding:.5em 0;
+    list-style:square;
+    line-height: 1.68;
+}
+.content img {
+    margin-top: .5em;
+    margin-bottom: .5em;
+    border-radius: 8px;
+}
+@media (min-width:40em) {
+    .content img {
+        margin-left: -2em;
+        max-width: calc(100% + 4em);
+    }
+}
+.content a {
+    text-decoration: underline;
+    color:blue;
+}
+.content a:hover {
+    color:darkblue;
+}
