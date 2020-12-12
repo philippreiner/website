@@ -2,6 +2,7 @@ import Head from "next/head";
 import NextLink from "next/link";
 import NextImage from "next/image";
 import { getSortedPostsData } from '../lib/posts'
+import Layout from '../components/layout'
 
 import {
   Box,
@@ -23,13 +24,9 @@ export async function getStaticProps() {
 
 export default function Home({ allPostsData }) {
   return (
-    <div>
-      <Head>
-        <title>Philipp Reiner</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Layout>
       <Container maxWidth="53em" maxW="xl">
-        <Box pt={["32px", "48px", "72px", "86px"]}>
+        <Box>
           <Box borderRadius="12px" boxSize={["72px", "128px", "160px"]}>
             <NextImage
               width="160"
@@ -76,7 +73,7 @@ export default function Home({ allPostsData }) {
           </Box>
         </Box>
 
-        <Box pt={[2, 4, 8]}>
+        <Box pt={[6, 6, 8]}>
           <Heading as="h2" pb="1" color="gray.500" fontWeight="500" size="md">
             Artikel
           </Heading>
@@ -101,6 +98,6 @@ export default function Home({ allPostsData }) {
           
         </Box>
       </Container>
-    </div>
+    </Layout>
   );
 }

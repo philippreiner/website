@@ -1,38 +1,40 @@
-import { getAllPostIds, getPostData } from '../../lib/posts'
-import NextLink from 'next/link'
+import { getAllPostIds, getPostData } from "../../lib/posts";
+import NextLink from "next/link";
+import Layout from "../../components/layout";
+import Page from "../../components/page";
+
+import { Heading } from "@chakra-ui/react";
 
 export async function getStaticProps({ params }) {
-  const postData = await getPostData(params.id)
+  const postData = await getPostData(params.id);
   return {
     props: {
-      postData
-    }
-  }
+      postData,
+    },
+  };
 }
 
 export async function getStaticPaths() {
-  const paths = getAllPostIds()
+  const paths = getAllPostIds();
   return {
     paths,
-    fallback: false
-  }
+    fallback: false,
+  };
 }
 export default function Post({ postData }) {
   return (
-    <>
-    <h1>{postData.title}</h1>
-    {postData.id}
-    <br/>
-    {postData.date}
-    <br/>
-    <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-    <br/>
-    <NextLink href="/">
-      <a>
-        Zurück
-      </a>
-    </NextLink>
-    </>
-  )
+    <Layout>
+      <Page>
+        <Heading as="h1" size="2xl">
+          {postData.title}
+        </Heading>
 
+        <br />
+        {postData.date}
+        <br />
+        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <br />
+      </Page>
+    </Layout>
+  );
 }
