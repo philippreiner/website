@@ -33,7 +33,7 @@ export default function Home({ allPostsData }) {
             />
           </Box>
 
-          <Box pt="24px">
+          <Box pt={["24px",null,"42px"]} pb={[1,null,2]}>
             <Heading fontWeight={["500", "900"]} as="h1" size="lg">
               <Text as="span" color="primary">
                 Philipp Reiner
@@ -48,7 +48,7 @@ export default function Home({ allPostsData }) {
           </Box>
         </Box>
 
-        <Box pt={[6, 6, 8]}>
+        <Box pt={[6, 8, 12]}>
           <Heading as="h2" pb="1" color="gray.500" fontWeight="500" size="md">
             Artikel
           </Heading>
