@@ -1,26 +1,21 @@
 import Head from "next/head";
 import NextLink from "next/link";
 import NextImage from "next/image";
-import { getSortedPostsData } from '../lib/posts'
-import Layout from '../components/layout'
-import Links from '../components/links'
+import { getSortedPostsData } from "../lib/posts";
+import Layout from "../components/layout";
+import Links from "../components/links";
 
-import {
-  Box,
-  Text,
-  Link,
-  Stack,
-  Container,
-  Heading,
-} from "@chakra-ui/react";
+import { Box, Text, Link, Container, Heading } from "@chakra-ui/react";
+
+import { StarIcon } from "@chakra-ui/icons";
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
+  const allPostsData = getSortedPostsData();
   return {
     props: {
-      allPostsData
-    }
-  }
+      allPostsData,
+    },
+  };
 }
 
 export default function Home({ allPostsData }) {
@@ -39,7 +34,7 @@ export default function Home({ allPostsData }) {
           </Box>
 
           <Box pt="24px">
-            <Heading fontWeight="500" as="h1" size="lg">
+            <Heading fontWeight={["500", "900"]} as="h1" size="lg">
               <Text as="span" color="primary">
                 Philipp Reiner
               </Text>{" "}
@@ -57,25 +52,27 @@ export default function Home({ allPostsData }) {
           <Heading as="h2" pb="1" color="gray.500" fontWeight="500" size="md">
             Artikel
           </Heading>
-          {allPostsData.map(({ id, title, date}) => (
+          {allPostsData.map(({ id, title, date, fav }) => (
             <NextLink href={`/blog/${id}`} passHref>
-            <Box
-              pb="4"
-              pt="4"
-              borderStyle="none"
-              borderColor="gray.100"
-              borderBottomWidth="0px"
-            >
-              <Link>
-                <Text>{title}</Text>
-                <Text color="gray.500" fontSize="sm">
-                  {date}
-                </Text>
-              </Link>
-            </Box>
-          </NextLink>
+              <Box
+                pb="4"
+                pt="4"
+                borderStyle="none"
+                borderColor="gray.100"
+                borderBottomWidth="0px"
+              >
+                <Link>
+                  <Text>
+                    {title}  
+                    {fav && <StarIcon pl="3px" mt="-3px" w="5" h="5" color="orange.300" />}
+                  </Text>
+                  <Text color="gray.500" fontSize="sm">
+                    {date}
+                  </Text>
+                </Link>
+              </Box>
+            </NextLink>
           ))}
-          
         </Box>
       </Container>
     </Layout>

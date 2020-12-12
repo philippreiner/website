@@ -14,11 +14,12 @@ export default function About({ children }) {
       bg="gray.100"
       p={[4, 8]}
     >
-      <Flex direction={["column",null,"row"]} >
-        <Box mr="4" boxSize={["48px", "64px", "120px"]}>
+      <Flex direction="column" >
+        <Text color="gray.500" pb="4" >Über den Autor</Text>
+        <Box mb="4" boxSize={["48px", "64px", "140px"]}>
           <NextImage
-            width="120"
-            height="120"
+            width="140"
+            height="140"
             src="/static/philipp-reiner.jpg"
             alt="Philipp Reiner"
             className="radius"
