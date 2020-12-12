@@ -50,7 +50,7 @@ export default function Post({ postData }) {
        
           <div className={Styles.content} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         <Text pt="2" textAlign="right" pb="8" color="gray.500">
-        Veröffentlicht am {postData.date}
+        Veröffentlicht {postData.date}
         </Text>
         <About></About>
       </Page>

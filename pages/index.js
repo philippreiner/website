@@ -38,9 +38,8 @@ export default function Home({ allPostsData }) {
               <Text as="span" color="primary">
                 Philipp Reiner
               </Text>{" "}
-              ist Experte für innovative Geschäftsmodelle. Ich kombiniere
-              Strategie, User Experience und Software um die digitale Zukunft zu
-              gestalten.
+              ist Experte für digitale Geschäftsmodelle. Ich kombiniere
+              Strategie, User Experience und Software um innovativ die Zukunft zu gestalten.
             </Heading>
           </Box>
           <Box pt="24px">
