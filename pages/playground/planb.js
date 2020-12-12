@@ -13,7 +13,7 @@ export default function Home() {
       <Container maxWidth="74em" maxW="xl">
       <Image
             boxSize={["72px","120px"]}
-            src="static/planb.png"
+            src="/static/planb.png"
             alt="PlanB."
           />
       </Container>

@@ -12,7 +12,7 @@ export default function About({ children }) {
       mb={[8, 12]}
       borderRadius="16px"
       bg="gray.100"
-      p={[8, 12]}
+      p={[4, 8]}
     >
       <Flex direction={["column",null,"row"]} >
         <Box mr="4" boxSize={["48px", "64px", "120px"]}>

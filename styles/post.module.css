@@ -29,9 +29,10 @@
     margin-bottom: .5em;
     border-radius: 8px;
 }
-@media (min-width:40em) {
+@media (min-width:48em) {
     .content img {
         margin-left: -2em;
+        margin-right:-2em;
         max-width: calc(100% + 4em);
     }
 }

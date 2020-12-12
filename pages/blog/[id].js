@@ -1,9 +1,9 @@
 import { getAllPostIds, getPostData } from "../../lib/posts";
-import NextLink from "next/link";
 import Layout from "../../components/layout";
 import About from "../../components/about";
 import Page from "../../components/page";
 import Styles from "../../styles/post.module.css";
+import Head from "next/head";
 
 import { Heading, Text, Box } from "@chakra-ui/react";
 
@@ -24,8 +24,15 @@ export async function getStaticPaths() {
   };
 }
 export default function Post({ postData }) {
+  const title = postData.title + ' - Philipp Reiner'
   return (
     <Layout>
+      <Head>
+        <title>{title}</title>
+
+        <meta property="og:title" content={title} />
+        <meta property="og:image" content={postData.image} />
+      </Head>
       <Page>
         <Heading as="h1" pt="4" size="2xl">
           {postData.title}

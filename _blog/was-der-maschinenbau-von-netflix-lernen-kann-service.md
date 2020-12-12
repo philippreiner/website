@@ -2,7 +2,8 @@
 title: 'Was der Maschinenbau von Netflix lernen kann'
 slogan: 'Die Zukunft gehört den Dienstleistungen. Und damit der ständigen Zufriedenheit der Kunden. Das ist im Maschinenbau und bei Serien gleich.'
 date: '2020-01-08'
-author: "Philipp Reiner"
+author: 'Philipp Reiner'
+image: '/images/maschinenbau-after-sales-netflix.jpg'
 ---
 
 So beginnt die Servicetransformation bereits in der IT. Die Cloud ist Rechenleistung als Service - statt der Kauf von Servern und Hardware mit hoher Kapitalbindung. Abgerechnet wird nach Minuten, Speichermenge oder lediglich die Anzahl an Benutzern - wie es Salesforce bereits seit 20 Jahren macht.

@@ -62,9 +62,9 @@ export default function Home({ allPostsData }) {
             <Box
               pb="4"
               pt="4"
-              borderStyle="solid"
+              borderStyle="none"
               borderColor="gray.100"
-              borderBottomWidth="1px"
+              borderBottomWidth="0px"
             >
               <Link>
                 <Text>{title}</Text>
