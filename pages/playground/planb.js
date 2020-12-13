@@ -26,7 +26,7 @@ export default function Home() {
                 Digitale Produkte und die Zukunft der Arbeit
               </Heading>
               <Text fontSize={[null,"24px"]} pt="12px" textAlign={["left","center"]} color="gray.500">
-                  PlanB ist mehr als nur Software. Als Ihr Innovationspartner entwickeln wir digitale Produkte,  und ermöglichen die Zukunft der Zusammenarbeit.
+                  PlanB ist mehr als nur Software. Als Ihr Innovationspartner entwickeln wir digitale Produkte und ermöglichen die Zukunft der Zusammenarbeit.
               </Text>
           </Box>
 
