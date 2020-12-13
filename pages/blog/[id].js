@@ -24,13 +24,14 @@ export async function getStaticPaths() {
   };
 }
 export default function Post({ postData }) {
-  const title = postData.title + ' - Philipp Reiner'
+  var title = postData.title + ' - Philipp Reiner'
   return (
     <Layout>
       <Head>
         <title>{title}</title>
 
         <meta property="og:title" content={title} />
+        <meta property="og:description" content={postData.slogan} />
         <meta property="og:image" content={postData.image} />
       </Head>
       <Page>
