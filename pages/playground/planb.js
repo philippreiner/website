@@ -20,8 +20,6 @@ export default function Home() {
 
             <Container maxWidth="54em" maxW="xl">
         <Box pt={["32px","48px","72px","96px"]} pb={["12px","48px"]}>
-
-
               <Heading textAlign={["left","center"]} fontWeight="900" as="h1" fontSize={["3xl","3xl","6xl"]}>
                 Digitale Produkte und die Zukunft der Arbeit
               </Heading>

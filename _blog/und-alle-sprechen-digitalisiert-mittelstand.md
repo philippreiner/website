@@ -4,7 +4,7 @@ slogan: ''
 date: '2020-11-01'
 author: 'Philipp Reiner'
 image: '/images/painting1.jpg'
-fav: true
+fav: false
 ---
 ![Painting of women talking](/images/painting1.jpg)
 
