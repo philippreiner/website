@@ -39,7 +39,7 @@ export default function Home({ allPostsData }) {
                 Philipp Reiner
               </Text>{" "}
               ist Experte für digitale Geschäftsmodelle. Ich kombiniere
-              Strategie, User Experience und Software um innovativ die Zukunft zu gestalten.
+              Strategie, User Experience und Software um nachhaltig Zukunft zu gestalten.
             </Heading>
           </Box>
           <Box pt="24px">
