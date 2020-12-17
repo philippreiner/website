@@ -53,20 +53,16 @@ export default function Potterwall() {
           templateRows="repeat(9, 1fr)"
           gap={0}
         >
-          {[...Array(17).keys()].map((key) => (
+          {[...Array(1).keys()].map((key) => (
             <Vid
               vsrc="/playground/potterwall/video1.mp4"
               isrc="/playground/potterwall/avatar.jpg"
             ></Vid>
           ))}
+          {[...Array(5).keys()].map((key) => (
           <video width="256" height="256" autoplay="1" loop muted>
-            <source src="/playground/potterwall/video1.mp4"/>
-          </video>
-          {[...Array(98).keys()].map((key) => (
-            <Vid
-              vsrc="/playground/potterwall/video1.mp4"
-              isrc="/playground/potterwall/avatar.jpg"
-            ></Vid>
+          <source src="/playground/potterwall/video1.mp4"/>
+        </video>
           ))}
         </Grid>
       </FullScreen>
