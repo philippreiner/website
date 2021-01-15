@@ -59,11 +59,6 @@ export default function Potterwall() {
               isrc="/playground/potterwall/avatar.jpg"
             ></Vid>
           ))}
-          {[...Array(5).keys()].map((key) => (
-          <video width="256" height="256" autoplay="1" loop muted>
-          <source src="/playground/potterwall/video1.mp4"/>
-        </video>
-          ))}
         </Grid>
       </FullScreen>
     </div>

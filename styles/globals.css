@@ -28,6 +28,9 @@
 body {
   font-size:18px;
 }
+h1 {
+  line-height: 1.25 !important;
+}
 .radius {
   border-radius: 20px;
 }

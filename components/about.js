@@ -32,9 +32,7 @@ export default function About({ children }) {
           <Text pb="2">
             Experte für digitale Geschäftsmodelle, User-Experience und digitale
             Transformation. &nbsp;
-            <NextLink href="/" passHref>
-              <Link color="gray.500">Mehr Beiträge lesen ...</Link>
-            </NextLink>
+sa
           </Text>
           <Links></Links>
         </Box>

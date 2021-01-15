@@ -8,16 +8,24 @@ export async function getStaticProps(context) {
   }
 }
 
-export default function Vid({ children, vsrc, isrc }) {
+function Video(props) {
+  return 
+    <video width="256" height="256" loop muted>
+      <source src={props.src} type="video/mp4" />
+    </video>
+}
 
-  return (
+function Img(props) {
+  return
+  <Image className={Style.image} src={props.src} width="256" height="256"/>
+
+}
+
+export default function Vid({ children, vsrc, isrc }) {
+    return (
     <Box>
-      <Image className={Style.image} src={isrc} width="256" height="256"/>
+        <div onClick="">Hallo</div>
+        
     </Box>
   );
 }
-/*
-      <video width="256" height="256" loop muted>
-        <source s1rc={vsrc} type="video/mp4" />
-      </video>
-      */
