@@ -31,8 +31,7 @@ export default function About({ children }) {
           </Heading>
           <Text pb="2">
             Experte für digitale Geschäftsmodelle, User-Experience und digitale
-            Transformation. &nbsp;
-sa
+            Transformation.
           </Text>
           <Links></Links>
         </Box>
