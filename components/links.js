@@ -13,12 +13,12 @@ export default function Links() {
         color="blue.500"
         href="https://www.linkedin.com/in/philippreiner/"
       >
-        <Tooltip label="Folgt mir für Updates" aria-label="Folgt mir für Updates">
+        <Tooltip label="Lebenslauf" aria-label="Folgt mir für Updates">
           LinkedIn
         </Tooltip>
       </Link>
       <Link isExternal color="blue.500" href="https://www.twitter.com/reiner">
-      <Tooltip label="Spannende Artikel" aria-label="Spannende Artikel">
+      <Tooltip label="Gedanken & Links" aria-label="Spannende Artikel">
           Twitter
         </Tooltip>
       </Link>
