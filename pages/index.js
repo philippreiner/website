@@ -22,7 +22,7 @@ export async function getStaticProps() {
 export default function Home({ allPostsData }) {
   return (
     <Layout>
-      <Container maxWidth="46em" maxW="xl">
+      <Container maxWidth="54em" maxW="xl">
         <Box>
           <Box borderRadius="12px" boxSize={["72px", "128px", "160px"]}>
             <NextImage
@@ -35,7 +35,7 @@ export default function Home({ allPostsData }) {
           </Box>
 
           <Box pt={["24px",null,"42px"]} pb={[1,null,2]}>
-            <Heading fontWeight={["500", "900"]} as="h1" size="lg">
+            <Heading fontWeight={["500", "900"]} as="h1" fontSize={["5vw","4vw","3vw","36px"]}>
               <Text as="span" color="primary">
                 Philipp Reiner
               </Text>{" "}
