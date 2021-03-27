@@ -3,15 +3,17 @@ import NextLink from "next/link";
 import NextImage from "next/image";
 import Links from "../components/links";
 
-import { Box, Link, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, useColorModeValue, Link, Flex, Heading, Text } from "@chakra-ui/react";
 
 export default function About({ children }) {
+  const bgColor = useColorModeValue("gray.100", "gray.700")
+
   return (
     <Box
       mt={[8, 12]}
       mb={[8, 12]}
       borderRadius="16px"
-      bg="gray.100"
+      bg={bgColor}
       p={[4, 8]}
     >
       <Flex direction="column" >
