@@ -34,7 +34,7 @@ export default function Post({ postData }) {
         <meta property="og:image" content={postData.image} />
       </Head>
       <Page>
-        <h1>
+        <h1 class="text-4xl font-bold inline-block bg-clip-text text-transparent bg-gradient-to-r from-purple-700 to-blue-400">
           {postData.title}
         </h1>
         <h2>
