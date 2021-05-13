@@ -5,6 +5,8 @@ import Page from "../../components/page";
 import Styles from "../../styles/post.module.css";
 import Head from "next/head";
 
+import { Subline, InlineHeading, Headline} from "@components/atoms"
+
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
   return {
@@ -34,15 +36,15 @@ export default function Post({ postData }) {
         <meta property="og:image" content={postData.image} />
       </Head>
       <Page>
-        <h1 class="text-4xl font-bold inline-block bg-clip-text text-transparent bg-gradient-to-r from-purple-700 to-blue-400">
-          {postData.title}
-        </h1>
-        <h2>
-          {postData.slogan}
-        </h2>
-       
+        <div className="pb-4">
+        <Headline>
+          <InlineHeading>
+            {postData.title}
+          </InlineHeading>
+        </Headline>
+        </div>
         <div className={Styles.content} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-        <p>
+        <p className="text-gray-500">
         Veröffentlicht {postData.date}
         </p>
       </Page>

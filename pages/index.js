@@ -41,7 +41,7 @@ export default function Home({ allPostsData }) {
 				</div>
 				<div className="pb-4 md:pb-6">
 					<Subline>
-						I believe that software should make our lives easier, not more complicated. At <a target="_blank" href="https://www.planb.net" class="hover:underline opacity-100 text-planb">PlanB.</a>, I enable companies to build market-leading digital products and adapt an agile mindset. Earlier Philipp co-founded <a target="_blank" href="https://www.conclurer.com" class="hover:underline text-black">Conclurer</a>, where his team developed a modular approach to industry 4.0 software and learned alot.
+						I believe that software should make our lives easier, not more complicated. At <a target="_blank" href="https://www.planb.net" class="hover:underline opacity-100 text-planb">PlanB.</a>, I enable companies to build market-leading digital products and adapt an agile mindset. Earlier Philipp co-founded <a target="_blank" href="https://www.conclurer.com" class="hover:underline text-black dark:text-white">Conclurer</a>, where his team developed a modular approach to industry 4.0 software and learned alot.
 					</Subline>
 				</div>
 				<div className="pb-4 md:pb-6">
@@ -52,6 +52,7 @@ export default function Home({ allPostsData }) {
 				{allPostsData.map(({ id, title, slogan }) => (
 					<Blogpost title={title} id={id} desc={slogan}/>
 				))}
+				&nbsp;
 				</div>
 
 		</div>
