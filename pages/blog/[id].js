@@ -1,11 +1,9 @@
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import Layout from "../../components/layout";
-import About from "../../components/about";
+
 import Page from "../../components/page";
 import Styles from "../../styles/post.module.css";
 import Head from "next/head";
-
-import { Heading, useColorModeValue, Text, Box } from "@chakra-ui/react";
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
@@ -25,7 +23,6 @@ export async function getStaticPaths() {
 }
 export default function Post({ postData }) {
   var title = postData.title + ' - Philipp Reiner'
-  const txtColor = useColorModeValue("gray.600", "gray.400")
 
   return (
     <Layout>
@@ -37,25 +34,17 @@ export default function Post({ postData }) {
         <meta property="og:image" content={postData.image} />
       </Head>
       <Page>
-        <Heading as="h1" pt="4" size="2xl">
+        <h1>
           {postData.title}
-        </Heading>
-        <Heading
-          as="p"
-          pb="4"
-          pt="4"
-          size="lg"
-          fontWeight="400"
-          color={txtColor}
-        >
+        </h1>
+        <h2>
           {postData.slogan}
-        </Heading>
+        </h2>
        
-          <div className={Styles.content} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-        <Text pt="2" textAlign="right" pb="8" color="gray.500">
+        <div className={Styles.content} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <p>
         Veröffentlicht {postData.date}
-        </Text>
-        <About></About>
+        </p>
       </Page>
     </Layout>
   );
