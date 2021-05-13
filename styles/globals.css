@@ -10,7 +10,6 @@
 a {
   cursor: pointer;
 }
-
 ::selection {
   background-color: rgba(0,26,255,.75);
   color:#fff;

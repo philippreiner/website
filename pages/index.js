@@ -1,10 +1,14 @@
-import Head from "next/head";
-import NextLink from "next/link";
+
+
 import NextImage from "next/image";
 import { getSortedPostsData } from "../lib/posts";
 import Layout from "@components/layout";
 import { Container, Subline, InlineHeading, Headline} from "@components/atoms"
 import Contacts from "@components/contacts"
+
+import { Blogpost } from "@components/blog"
+
+
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
   return {
@@ -37,18 +41,19 @@ export default function Home({ allPostsData }) {
 				</div>
 				<div className="pb-4 md:pb-6">
 					<Subline>
-						I believe that software should make our lives easier, not more complicated. At <a target="_blank" href="https://www.planb.net" class="hover:underline opacity-100 text-planb">PlanB.</a>, I enable companies to build market-leading digital products and adapt an agile mindset. Earlier I’ve co-founded <a target="_blank" href="https://www.conclurer.com" class="hover:underline text-black">Conclurer</a>, where we developed a modular approach to industry 4.0 software and learned alot.
+						I believe that software should make our lives easier, not more complicated. At <a target="_blank" href="https://www.planb.net" class="hover:underline opacity-100 text-planb">PlanB.</a>, I enable companies to build market-leading digital products and adapt an agile mindset. Earlier Philipp co-founded <a target="_blank" href="https://www.conclurer.com" class="hover:underline text-black">Conclurer</a>, where his team developed a modular approach to industry 4.0 software and learned alot.
 					</Subline>
 				</div>
 				<div className="pb-4 md:pb-6">
 					<Contacts/>
 				</div>
+				<div className="pt-8 md:pt-16">
 
-				{allPostsData.map(({ id, title, date, fav }) => (
-					<NextLink href={`/blog/${id}`} passHref>
-						<a class="underline text-blue-500" >{title}</a>
-					</NextLink>
+				{allPostsData.map(({ id, title, slogan }) => (
+					<Blogpost title={title} id={id} desc={slogan}/>
 				))}
+				</div>
+
 		</div>
 	</Container>
 

@@ -19,10 +19,12 @@ export default function Layout({ children }) {
       </Head>
 
       {children}
-
+      <div className="text-center py-4 md:py-8">
         <NextLink href="/impressum">
-          Impressum & Datenschutz
+          <a class="text-gray-500 hover:underline">Impressum & Datenschutz</a>
         </NextLink>
+      </div>
+
 
       {process.env.NODE_ENV === "production" && (
         <script

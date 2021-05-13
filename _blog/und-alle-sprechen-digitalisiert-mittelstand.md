@@ -1,6 +1,6 @@
 ---
 title: 'Und Sie sprachen "Digitalisiert"'
-slogan: ''
+slogan: 'Eine kleine Geschichte über Digitalisierung in Deutschland'
 date: '2020-11-01'
 author: 'Philipp Reiner'
 image: '/images/painting1.jpg'
