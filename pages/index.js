@@ -1,13 +1,13 @@
-import Head from "next/head";
-import NextLink from "next/link";
+
+
 import NextImage from "next/image";
 import { getSortedPostsData } from "../lib/posts";
-import Layout from "../components/layout";
-import Links from "../components/links";
+import Layout from "@components/layout";
+import { Container, Subline, InlineHeading, Headline} from "@components/atoms"
+import Contacts from "@components/contacts"
 
-import { Box, Text, Link, Container, Heading } from "@chakra-ui/react";
+import { Blogpost } from "@components/blog"
 
-import { StarIcon } from "@chakra-ui/icons";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -22,59 +22,42 @@ export async function getStaticProps() {
 export default function Home({ allPostsData }) {
   return (
     <Layout>
-      <Container maxWidth="54em" maxW="xl">
-        <Box>
-          <Box borderRadius="12px" boxSize={["72px", "128px", "160px"]}>
-            <NextImage
-              width="160"
-              height="160"
-              src="/static/philipp-reiner.jpg"
-              alt="Philipp Reiner"
-              className="radius"
-            />
-          </Box>
+		<Container>
+			<div className="pt-4 sm:pt-16">
+				<div className="py-4 md:pb-8 w-24 sm:w-32 md:w-40">
+					<NextImage
+						width="120"
+						height="120"
+						src="/static/philipp-reiner.jpg"
+						alt="Philipp Reiner"
+						className="object-scale-down rounded-lg"
+					/>
+				</div>
+				<div className="pb-4 md:pb-6">
+					<Headline>
+						<InlineHeading>Philipp Reiner&nbsp;</InlineHeading>
+						is an expert for digital business models. I combine strategy, user experience and software to create a sustainable future today.
+					</Headline>
+				</div>
+				<div className="pb-4 md:pb-6">
+					<Subline>
+						I believe that software should make our lives easier, not more complicated. At <a target="_blank" href="https://www.planb.net" class="hover:underline opacity-100 text-planb">PlanB.</a>, I enable companies to build market-leading digital products and adapt an agile mindset. Earlier Philipp co-founded <a target="_blank" href="https://www.conclurer.com" class="hover:underline text-black dark:text-white">Conclurer</a>, where his team developed a modular approach to industry 4.0 software and learned alot.
+					</Subline>
+				</div>
+				<div className="pb-4 md:pb-6">
+					<Contacts/>
+				</div>
+				<div className="pt-8 md:pt-16">
 
-          <Box pt={["24px",null,"42px"]} pb={[1,null,2]}>
-            <Heading fontWeight={["500", "900"]} as="h1" fontSize={["5vw","4vw","3vw","36px"]}>
-              <Text as="span" color="primary">
-                Philipp Reiner
-              </Text>{" "}
-              ist Experte für digitale Geschäftsmodelle. Ich kombiniere
-              Strategie, User Experience und Software um nachhaltig Zukunft zu gestalten.
-            </Heading>
-          </Box>
-          <Box pt="24px">
-            <Links></Links>
-          </Box>
-        </Box>
+				{allPostsData.map(({ id, title, slogan }) => (
+					<Blogpost title={title} id={id} desc={slogan}/>
+				))}
+				&nbsp;
+				</div>
 
-        <Box pt={[6, 8, 12]}>
-          <Heading as="h2" pb="1" color="gray.500" fontWeight="500" size="md">
-            Artikel
-          </Heading>
-          {allPostsData.map(({ id, title, date, fav }) => (
-            <NextLink href={`/blog/${id}`} passHref>
-              <Box
-                pb="4"
-                pt="4"
-                borderStyle="none"
-                borderColor="gray.100"
-                borderBottomWidth="0px"
-              >
-                <Link>
-                  <Text>
-                    {title}  
-                    {fav && <StarIcon pl="3px" mt="-3px" w="5" h="5" color="orange.300" />}
-                  </Text>
-                  <Text color="gray.500" fontSize="sm">
-                    {date}
-                  </Text>
-                </Link>
-              </Box>
-            </NextLink>
-          ))}
-        </Box>
-      </Container>
+		</div>
+	</Container>
+
     </Layout>
   );
 }

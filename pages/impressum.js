@@ -3,8 +3,7 @@ import Layout from "../components/layout";
 import Page from "../components/page";
 import Styles from "../styles/post.module.css";
 import { getContent } from "../lib/content";
-
-import { Heading, Text, Box } from "@chakra-ui/react";
+import { Headline} from "@components/atoms"
 
 export async function getStaticProps({ params }) {
   const content = await getContent("impressum");
@@ -22,9 +21,9 @@ export default function Impressum({ content }) {
         <title>Impressum - Philipp Reiner</title>
       </Head>
       <Page>
-        <Heading as="h1" pt="4" pb="4" size="2xl">
-          Impressum
-        </Heading>
+        <div className="pb-4">
+        <Headline>Impressum</Headline>
+        </div>
         <div
           className={Styles.content}
           dangerouslySetInnerHTML={{ __html: content }}
