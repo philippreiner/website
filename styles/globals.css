@@ -16,6 +16,7 @@ a {
 }
 body {
   background-image: radial-gradient(96.25% 65.82% at 0 0,#dedede 0,rgba(171,117,255,0) 100%);
+  background-repeat: no-repeat;
 }
 .font-heading {
   font-family: 'Barlow',system-ui,-apple-system,sans-serif;
