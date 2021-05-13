@@ -3,7 +3,7 @@ title: 'Gegen die Digitalisierung deiner Aufmerksamkeit'
 date: '2020-09-09'
 author: 'Philipp Reiner'
 image: '/images/iphone-screentime.webp'
-slogan: 'Aufmerksam am Smartphone"
+slogan: 'Aufmerksam am Smartphone'
 fav: false
 ---
 ![Screentime iOS14](/images/iphone-screentime.webp)
