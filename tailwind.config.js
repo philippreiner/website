@@ -6,7 +6,8 @@ module.exports = {
       colors: {
         planb: '#ff5100',
         primary: '#001AFF',
-        secondary: '#A300FF'
+        secondary: '#A300FF',
+        primarylight: '#3347FF',
       }
     },
     container: {

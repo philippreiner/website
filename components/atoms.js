@@ -1,4 +1,5 @@
 const gradient = "bg-gradient-to-r from-primary via-secondary to-secondary";
+const gradient_dark = "dark:from-primarylight dark:via-primarylight dark:to-blue-300";
 
 export function Container({ children }) {
   return (
@@ -18,7 +19,7 @@ export function Subline({ children }) {
 
 export function InlineHeading({ children }) {
   return (
-    <h1 className={`inline-block bg-clip-text text-transparent ${gradient}`}>
+    <h1 className={`inline-block bg-clip-text text-transparent ${gradient} ${gradient_dark}`}>
       {children} 
     </h1>
   );

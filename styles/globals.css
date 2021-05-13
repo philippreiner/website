@@ -14,6 +14,9 @@ a {
   background-color: rgba(0,26,255,.75);
   color:#fff;
 }
+body {
+  background-image: radial-gradient(96.25% 65.82% at 0 0,#dedede 0,rgba(171,117,255,0) 100%);
+}
 .font-heading {
   font-family: 'Barlow',system-ui,-apple-system,sans-serif;
   font-weight: 900 !important;
@@ -22,6 +25,9 @@ a {
   fill:#000;
 }
 @media (prefers-color-scheme: dark) {
+  body {
+    background-image: radial-gradient(96.25% 65.82% at 0 0,#555 0,rgba(171,117,255,0) 100%);
+  }
   .icon svg {
     fill:#fff;
   }
