@@ -12,7 +12,7 @@
     "@emotion/styled": "^11.0.0",
     "framer-motion": "^2.9.5",
     "gray-matter": "^4.0.2",
-    "next": "^10.0.7",
+    "next": "^10.2.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-full-screen": "^0.3.1",

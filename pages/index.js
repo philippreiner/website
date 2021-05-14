@@ -3,9 +3,9 @@
 import NextImage from "next/image";
 import { getSortedPostsData } from "../lib/posts";
 import Layout from "@components/layout";
-import { Container, Subline, InlineHeading, Headline} from "@components/atoms"
+import { Container, Minilogo, Subline, InlineHeading, Headline} from "@components/atoms"
 import Contacts from "@components/contacts"
-
+import NextLink from "next/link";
 import { Blogpost } from "@components/blog"
 
 
@@ -17,7 +17,6 @@ export async function getStaticProps() {
     },
   };
 }
-
 
 export default function Home({ allPostsData }) {
   return (
@@ -41,20 +40,23 @@ export default function Home({ allPostsData }) {
 				</div>
 				<div className="pb-4 md:pb-6">
 					<Subline>
-						I believe that software should make our lives easier, not more complicated. At <a target="_blank" href="https://www.planb.net" class="hover:underline opacity-100 text-planb">PlanB.</a>, I enable companies to build market-leading digital products and adapt an agile mindset. Earlier Philipp co-founded <a target="_blank" href="https://www.conclurer.com" class="hover:underline text-black dark:text-white">Conclurer</a>, where his team developed a modular approach to industry 4.0 software and learned alot.
+						Software should make our life easier, not more complicated. At <a target="_blank" href="https://www.planb.net" class="hover:underline opacity-100 text-planb"><Minilogo name="planb"/>PlanB.</a>, I enable companies to build market-leading digital products and adapt an agile mindset. Earlier I've co-founded <a target="_blank" href="https://www.conclurer.com" class="hover:underline text-black dark:text-white"><Minilogo name="conclurer"/>Conclurer</a>, where my team developed a modular approach to industry 4.0 software and learned alot.
 					</Subline>
 				</div>
 				<div className="pb-4 md:pb-6">
 					<Contacts/>
 				</div>
 				<div className="pt-8 md:pt-16">
-
-				{allPostsData.map(({ id, title, slogan }) => (
-					<Blogpost title={title} id={id} desc={slogan}/>
+				{allPostsData.map(({ id, title, image, slogan, fav, language }) => (
+					fav != false && <Blogpost title={title} id={id} language={language} image={image} desc={slogan}/>
 				))}
 				&nbsp;
 				</div>
-
+				<div className="-mt-4">
+					<NextLink href="/blog">
+						<a class="text-gray-500 underline">All Posts</a>
+					</NextLink>
+				</div>
 		</div>
 	</Container>
 

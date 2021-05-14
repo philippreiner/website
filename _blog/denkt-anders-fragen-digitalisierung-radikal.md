@@ -4,7 +4,8 @@ slogan: 'Wie würdest du als Maschinenbauer dein Unternehmen gestalten, wenn du 
 date: '2020-07-01'
 author: 'Philipp Reiner'
 image: '/images/dashboard-unsplash.jpg'
-fav: false
+fav: true
+language: 'de'
 ---
 
 In den vergangenen Jahren habe ich diese Frage oft mit Inhabern und Geschäftsführern großer und kleiner Maschinenbau-Unternehmen diskutiert. Beim Mittagessen oder im Rahmen von bezahlten Workshops. Und egal ob 50 oder 5000 Mitarbeiter*innen: Alle würden es heute radikal anders machen.

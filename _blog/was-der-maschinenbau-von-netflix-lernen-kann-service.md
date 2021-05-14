@@ -5,6 +5,7 @@ date: '2020-01-08'
 author: 'Philipp Reiner'
 image: '/images/maschinenbau-after-sales-netflix.jpg'
 fav: true
+language: 'de'
 ---
 
 So beginnt die Servicetransformation bereits in der IT. Die Cloud ist Rechenleistung als Service - statt der Kauf von Servern und Hardware mit hoher Kapitalbindung. Abgerechnet wird nach Minuten, Speichermenge oder lediglich die Anzahl an Benutzern - wie es Salesforce bereits seit 20 Jahren macht.

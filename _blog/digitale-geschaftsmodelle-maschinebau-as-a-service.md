@@ -4,7 +4,8 @@ slogan: 'Die digitale Transformation wandelt die Industrie. Von digitalen Prozes
 date: '2019-05-01'
 author: 'Philipp Reiner'
 image: '/images/old-factory.jpg'
-fav: false
+fav: true
+language: 'de'
 ---
 Industrie 4.0, digitale Zwillinge und künstliche Intelligenz. Ein Besuch auf der Hannover Messe erschlägt mit Schlagwörtern und den neusten Technologien. Die Digitalisierung der Unternehmen ist da und jeder versucht mitzuspielen. Sind diese Technologien nur ein Hype oder vielleicht doch eine Bedrohung für Ihr Geschäftsmodell?
 
