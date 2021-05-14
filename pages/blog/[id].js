@@ -37,11 +37,11 @@ export default function Post({ postData }) {
       </Head>
       <Page>
         <div className="pb-4">
-        <Headline>
-          <InlineHeading>
-            {postData.title}
-          </InlineHeading>
-        </Headline>
+          <Headline>
+              <InlineHeading>
+                {postData.title}
+              </InlineHeading>
+          </Headline>
         </div>
         <div className={Styles.content} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         <p className="text-gray-500">

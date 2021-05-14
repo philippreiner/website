@@ -27,6 +27,7 @@ export default function Home({ allPostsData }) {
 					<NextImage
 						width="120"
 						height="120"
+						quality="70"
 						src="/static/philipp-reiner.jpg"
 						alt="Philipp Reiner"
 						className="object-scale-down rounded-lg"
@@ -43,10 +44,10 @@ export default function Home({ allPostsData }) {
 						Software should make our life easier, not more complicated. At <a target="_blank" href="https://www.planb.net" class="hover:underline opacity-100 text-planb"><Minilogo name="planb"/>PlanB.</a>, I enable companies to build market-leading digital products and adapt an agile mindset. Earlier I've co-founded <a target="_blank" href="https://www.conclurer.com" class="hover:underline text-black dark:text-white"><Minilogo name="conclurer"/>Conclurer</a>, where my team developed a modular approach to industry 4.0 software and learned alot.
 					</Subline>
 				</div>
-				<div className="pb-4 md:pb-6">
+				<div className="pb-6 md:pb-12 lg:pb-14">
 					<Contacts/>
 				</div>
-				<div className="pt-8 md:pt-16">
+				<div className="pt-8 border-t-2 border-gray-200 dark:border-gray-800 md:pt-16">
 				{allPostsData.map(({ id, title, image, slogan, fav, language }) => (
 					fav != false && <Blogpost title={title} id={id} language={language} image={image} desc={slogan}/>
 				))}
