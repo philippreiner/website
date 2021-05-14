@@ -5,6 +5,7 @@ date: '2020-07-01'
 author: 'Philipp Reiner'
 image: '/images/buecher-startup.jpg'
 fav: false
+language: 'de'
 ---
 Tausende Links und tolle Blogartikel sieht man jeden Tag auf LinkedIn und Co. Einige sind Müll, einige kann man durchaus lesen und andere sind einfach großartig. Und manchmal sind die Informationen und Gedanken so fundiert, dass man sich wiederholt an Sie erinnert.
 

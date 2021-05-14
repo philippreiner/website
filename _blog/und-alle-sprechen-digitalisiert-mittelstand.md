@@ -5,6 +5,7 @@ date: '2020-11-01'
 author: 'Philipp Reiner'
 image: '/images/painting1.jpg'
 fav: false
+language: 'de'
 ---
 ![Painting of women talking](/images/painting1.jpg)
 

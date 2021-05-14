@@ -5,6 +5,7 @@ date: '2020-12-15'
 author: 'Philipp Reiner'
 image: '/images/developers-scrum.jpg'
 fav: false
+language: 'de'
 ---
 
 Warum braucht man 8 Dimensionen - vom Wertbereich, über Gruppe zu Ergebnisiterationsnummer - um eine Aufgabe zu klassifizieren? Die häufigste Antwort auf diese Frage ist die innere Komplexität der Organisation und dass es so notwendig ist. Und der Einkauf eben lange Featureslisten statt User-Experience bevorzugt.

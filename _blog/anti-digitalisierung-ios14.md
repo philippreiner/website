@@ -5,6 +5,7 @@ author: 'Philipp Reiner'
 image: '/images/iphone-screentime.webp'
 slogan: 'Aufmerksam am Smartphone'
 fav: false
+language: 'de'
 ---
 ![Screentime iOS14](/images/iphone-screentime.webp)
 
