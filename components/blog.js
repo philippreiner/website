@@ -28,10 +28,11 @@ export function Blogpost({ title, id, image, desc, language }) {
           {image != null &&
           <div className="hidden sm:block flex-none w-32 md:w-32 pl-4">
               <NextImage
-              width="130"
+              width="110"
               height="80"
               src={image}
               alt={title}
+              quality="70"
               className="object-cover rounded-lg"
             />
           </div>
