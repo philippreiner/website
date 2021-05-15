@@ -1,6 +1,3 @@
-import Head from "next/head";
-import NextLink from "next/link";
-
 
 export default function Contacts() {
   return (

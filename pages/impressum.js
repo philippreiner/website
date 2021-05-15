@@ -3,7 +3,7 @@ import Layout from "../components/layout";
 import Page from "../components/page";
 import Styles from "../styles/post.module.css";
 import { getContent } from "../lib/content";
-import { Headline} from "@components/atoms"
+import { Headline, LanguagePill} from "@components/atoms"
 
 export async function getStaticProps({ params }) {
   const content = await getContent("impressum");
@@ -22,7 +22,10 @@ export default function Impressum({ content }) {
       </Head>
       <Page>
         <div className="pb-4">
-          <Headline>Imprint / Impressum</Headline>
+          <Headline>
+            Imprint / Impressum
+            
+          </Headline>
         </div>
         <div
           className={Styles.content}

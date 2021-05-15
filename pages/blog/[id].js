@@ -52,7 +52,7 @@ export default function Post({ postData }) {
                 {postData.date}
           </div>
         </article>
-        <div className="pt-4 md:pt-8 pb-4">
+        <div className="pt-2 pb-4">
           <About/>
         </div>
 

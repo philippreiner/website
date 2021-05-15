@@ -5,6 +5,7 @@ import { Container, Minilogo, Subline, InlineHeading, Headline} from "@component
 import Contacts from "@components/contacts"
 import NextLink from "next/link";
 import { Blogpost } from "@components/blog"
+import { Tagline } from "@components/about";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -31,12 +32,8 @@ export default function Home({ allPostsData }) {
 					/>
 				</div>
 				<div className="pb-4 md:pb-6">
-					<Headline>
-						<InlineHeading>Philipp Reiner&nbsp;</InlineHeading>
-						is an expert for digital business models. I combine strategy, user experience and software to create a sustainable future today.
-					</Headline>
+					<Tagline/>
 				</div>
-				
 				<div className="pb-4 md:pb-6">
 					<Subline>
 						Software should make our life easier, not more complicated. At <a target="_blank" href="https://www.planb.net" class="hover:underline opacity-100 text-planb whitespace-nowrap"><Minilogo name="planb"/>PlanB.</a>, I enable companies to build market-leading digital products and adapt an agile mindset. Earlier I've co-founded <a target="_blank" href="https://www.conclurer.com" class="hover:underline text-black dark:text-white whitespace-nowrap"><Minilogo name="conclurer"/>Conclurer</a>, where my team developed a modular approach to industry 4.0 software and learned alot.
