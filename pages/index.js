@@ -47,7 +47,6 @@ export default function Home({ allPostsData }) {
 				<div className="pb-8 md:pb-12 lg:pb-14">
 					<Contacts/>
 				</div>
-				<Fade cascade delay="50" triggerOnce>
 					<div className="pt-8 border-t-2 border-gray-200 dark:border-gray-800 md:pt-16">	
 						{allPostsData.map(({ id, title, image, slogan, fav, language }) => (
 							fav != false && <Blogpost title={title} id={id} language={language} image={image} desc={slogan}/>
@@ -59,7 +58,6 @@ export default function Home({ allPostsData }) {
 							<a class="text-gray-500 underline">All Posts</a>
 						</NextLink>
 					</div>
-				</Fade>
 		</div>
 	</Container>
 
