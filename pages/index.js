@@ -1,7 +1,7 @@
 import NextImage from "next/image";
 import { getSortedPostsData } from "../lib/posts";
 import Layout from "@components/layout";
-import { Container, Minilogo, Subline, InlineHeading, Headline} from "@components/atoms"
+import { Container, Minilogo, Subline} from "@components/atoms"
 import Contacts from "@components/contacts"
 import NextLink from "next/link";
 import { Blogpost } from "@components/blog"
