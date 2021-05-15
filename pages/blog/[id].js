@@ -4,8 +4,9 @@ import Layout from "../../components/layout";
 import Page from "../../components/page";
 import Styles from "../../styles/post.module.css";
 import Head from "next/head";
+import About from "@components/about";
 
-import { Subline, InlineHeading, Headline} from "@components/atoms"
+import { Heading, Homelink } from "@components/atoms"
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
@@ -37,16 +38,34 @@ export default function Post({ postData }) {
       </Head>
       <Page>
         <div className="pb-4">
-          <Headline>
-              <InlineHeading>
-                {postData.title}
-              </InlineHeading>
-          </Headline>
+          <Heading>
+            {postData.title}
+          </Heading>
         </div>
-        <div className={Styles.content} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-        <p className="text-gray-500">
-        Veröffentlicht {postData.date}
-        </p>
+        <article>
+          <div className={Styles.content} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+          <div className="text-gray-500 text-sm pt-4 flex items-center">
+                <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="7.25" stroke="currentColor" stroke-width="1.5"></circle>
+                  <path stroke="currentColor" stroke-width="1.5" d="M12 8V12L14 14"></path>
+                </svg>
+                {postData.date}
+          </div>
+        </article>
+        <div className="pt-4 md:pt-8 pb-4">
+          <About/>
+        </div>
+
+        <div className="hidden pt-4 mt-4 md:mt-8 border-t-2 border-gray-200 dark:border-gray-800 md:pt-8 pb-4">
+            <div className="text-gray-500 flex items-center">
+              <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="7.25" stroke="currentColor" stroke-width="1.5"></circle>
+                <path stroke="currentColor" stroke-width="1.5" d="M12 8V12L14 14"></path>
+              </svg>
+              {postData.date}
+            </div>
+        </div>
+
       </Page>
     </Layout>
   );

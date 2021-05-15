@@ -18,11 +18,11 @@ export default function Impressum({ content }) {
   return (
     <Layout>
       <Head>
-        <title>Impressum - Philipp Reiner</title>
+        <title>Imprint</title>
       </Head>
       <Page>
         <div className="pb-4">
-        <Headline>Impressum</Headline>
+          <Headline>Imprint / Impressum</Headline>
         </div>
         <div
           className={Styles.content}
