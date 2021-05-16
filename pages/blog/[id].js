@@ -31,7 +31,6 @@ export default function Post({ postData }) {
     <Layout>
       <Head>
         <title>{title}</title>
-
         <meta property="og:title" content={title} />
         <meta property="og:description" content={postData.slogan} />
         <meta property="og:image" content={postData.image} />
