@@ -4,7 +4,7 @@ slogan: 'Wie würdest du als Maschinenbauer dein Unternehmen gestalten, wenn du 
 date: '2020-07-01'
 author: 'Philipp Reiner'
 image: '/images/dashboard-unsplash.jpg'
-fav: true
+fav: false
 language: 'de'
 ---
 
