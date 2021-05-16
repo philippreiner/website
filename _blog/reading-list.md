@@ -59,6 +59,6 @@ Expressing your ideas and saying things you want is hard. I still see room for i
 [How to say it right, the first time, every time on Amazon](https://www.amazon.de/Pitch-Perfect-Right-First-English-ebook/dp/B00DB3A4VS)
 
 ## 📈 Exponential growth affects us all
-_(German)_ Eye-opening metrics about how small improvements can lead to exponential growth that we as a species often under-estimat. From electrical cars, social media, climate change to the Covid-19 pandemic: Our world is changing (too) fast and we need to adapt. 
+_(German)_ Eye-opening metrics about how small improvements can lead to exponential growth that we as a species often under-estimate. From electrical cars, social media, climate change to the Covid-19 pandemic: Our world is changing (too) fast and we need to adapt. 
 
 ["Das Experiment sind wir" on Amazon](https://www.amazon.de/Das-Experiment-sind-atemberaubend-Beschleunigung-ebook/dp/B086VRZQJH/)
