@@ -5,7 +5,6 @@ import { Homelink } from "@components/atoms"
 
 
 const name = "Philipp Reiner";
-const isBrowser = typeof window !== "undefined";
 export const siteTitle = "Philipp Reiner";
 
 export default function Layout({ children }) {
@@ -14,15 +13,16 @@ export default function Layout({ children }) {
   return (
     <div>
       <Head>
-        <title>Philipp Reiner</title>
+        <title>{name}</title>
         <link rel="icon" href="/favicon.ico" />
 
-        <meta property="og:title" content="Philipp Reiner"/>
-        <meta name="author" content="Philipp Reiner"/>
+        <meta property="og:title" content={name}/>
+        <meta name="author" content={name}/>
       </Head>
 
       {children}
-      <div className="text-center text-sm py-4 md:py-8">
+
+      <div className="text-center text-sm py-4 md:py-8 mb-4">
         <NextLink href="/impressum">
           <a class="text-gray-500 hover:underline">Imprint & Privacy</a>
         </NextLink>

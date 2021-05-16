@@ -11,14 +11,14 @@ export function Blogpost({ title, id, image, desc, language }) {
       <NextLink href={url}>
         <a className="flex items-center">
           <div className="flex-grow">
-            <h3 class="font-bold">
-              {language == 'de' &&
-                <LanguagePill label="de"/>
-              }
+            <span class="font-bold">
               <InlineHeading>
+                {language == 'de' &&
+                  <LanguagePill label="de"/>
+                }
                 {title} 
               </InlineHeading>
-            </h3>
+            </span>
             <p>
               {desc}
             </p>
