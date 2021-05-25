@@ -4,7 +4,7 @@ slogan: 'Why nobody needs a physical button for the climate controls but touchsc
 date: '2021-05-25'
 author: 'Philipp Reiner'
 image: '/images/tesla-small.jpg'
-fav: false
+fav: true
 language: 'en'
 ---
 
