@@ -1,6 +1,6 @@
 ---
 title: 'Dated customer understanding explained with automotive UX'
-slogan: 'Why nobody needs a physical button for the climate controls but touchscreens are a good fit for everything'
+slogan: 'Why nobody needs a physical button for the climate controls but touchscreens are not a good fit for everything'
 date: '2021-05-25'
 author: 'Philipp Reiner'
 image: '/images/tesla-small.jpg'
