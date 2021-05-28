@@ -1,12 +1,11 @@
-/* barlow-900 - latin */
+/* manrope-800 - latin */
 @font-face {
-  font-family: 'Barlow';
+  font-family: 'Manrope';
   font-style: normal;
-  font-weight: 900;
-  font-display: swap;
+  font-weight: 800;
   src: local(''),
-       url('/static/fonts/barlow-v5-latin-900.woff2') format('woff2'),
-       url('/static/fonts/barlow-v5-latin-900.woff') format('woff');
+       url('/static/fonts/manrope-v4-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/static/fonts/manrope-v4-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 a {
   cursor: pointer;
@@ -20,8 +19,8 @@ body {
   background-repeat: no-repeat;
 }
 .font-heading {
-  font-family: 'Barlow',system-ui,-apple-system,sans-serif;
-  font-weight: 900 !important;
+  font-family: 'Manrope',system-ui,-apple-system,sans-serif;
+  font-weight: 800 !important;
 }
 .icon svg{
   fill:#000;

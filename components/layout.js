@@ -29,15 +29,13 @@ export default function Layout({ children }) {
           <a class="text-gray-500 hover:underline">Imprint & Privacy</a>
         </NextLink>
       </div>
-
-      {process.env.NODE_ENV === "production" && (
-        <script
+      <script
           async
           defer
           data-domain="philippreiner.info"
-          src="https://plausible.io/js/plausible.js"
+          data-api="/api/event"
+          src="/js/script.js"
         />
-      )}
     </div>
   );
 }
