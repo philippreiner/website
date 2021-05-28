@@ -37,6 +37,9 @@ export default function Home({ allPostsData }) {
 				<div className="pb-4 md:pb-6">
 					<Subline>
 						Software should make our life easier, not more complicated. At <a rel="noreferrer" target="_blank" href="https://www.planb.net" class="hover:underline opacity-100 text-planb whitespace-nowrap"><Minilogo name="planb"/>PlanB.</a>, I enable companies to build market-leading digital products and adapt an agile mindset. Earlier I've co-founded <a rel="noreferrer" target="_blank" href="https://www.conclurer.com" class="hover:underline text-black dark:text-white whitespace-nowrap"><Minilogo name="conclurer"/>Conclurer</a>, where my team developed a modular approach to industry 4.0 software and learned alot.
+						&nbsp;<NextLink href="/blog/conversation-starter">
+							<a class="underline">Learn more</a>
+						</NextLink>
 					</Subline>
 				</div>
 				<div className="pb-6 md:pb-10 lg:pb-12">

@@ -45,3 +45,15 @@
 .content a:hover {
     color:darkblue;
 }
+
+@media (prefers-color-scheme: dark) {
+    .content a {
+        color:lightpink;
+    }
+    .content a:hover {
+        color:#A300FF;
+    }
+    .content p, .content ul, .content ol {
+        opacity: .8;
+    }
+}

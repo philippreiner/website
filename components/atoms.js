@@ -31,7 +31,7 @@ export function InlineHeading({ children }) {
 }
 export function Heading({ children }) {
   return (
-    <h1 className={`inline-block text-2xl sm:text-3xl md:text-4xl font-heading bg-clip-text text-transparent ${gradient} ${gradient_dark_alt}`}>
+    <h1 className={`inline-block text-2xl sm:text-3xl md:text-4xl font-heading bg-clip-text text-transparent ${gradient} dark:text-white`}>
       {children} 
     </h1>
   );
