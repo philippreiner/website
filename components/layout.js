@@ -32,9 +32,8 @@ export default function Layout({ children }) {
       <script
           async
           defer
-          data-domain="philippreiner.info"
-          data-api="/api/event"
-          src="/js/script.js"
+          data-domain="www.philippreiner.info"
+          src="/js/p.js"
         />
     </div>
   );
