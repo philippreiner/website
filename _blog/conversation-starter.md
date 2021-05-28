@@ -14,12 +14,12 @@ While you can learn about my work on [LinkedIn](https://www.linkedin.com/in/phil
 - **Startups and Entrepreneurship** I believe that innovation and therefore progress is a result of taking the risk to build something from the ground up.
 - **Agile and Collaboration** Leading people to build something complex and huge in small iterations by using agile methods such as Scrum.
 - **Future Business Models** The world is changing and so are companies. How businesses work and make money fascinate me - from a local restaurant to global supply chains
-- **Teaching other** I'm doing lectures at my local university (DHBW Heidenheim) about Stratic Supply Chain Management and Web Programming. 
+- **Teaching others** I'm doing lectures at my local university (DHBW Heidenheim) about Stratic Supply Chain Management and Web Programming. 
 
 ![old cameras of mine](/images/cameras.jpg)
 
 ## On the Weekends
-- **Photography** I enjoy taking picture with my Fuji cameras - mostly portrait in a calm way so that I can get to know other persons well. Editing like a professional included.
+- **Photography** I enjoy taking picture with my Fuji cameras - mostly portraits in a calm setting so that I can get to know other persons well. Editing like a professional included.
 - **Gaming** Back when graphic card prices were more down to earth, I enjoyed building my gaming rig and playing mostly creative and building-based games.
 - **Organising Events** I've organised a 5000 people graduation festival back in school and still like to look behind the scenes at large festival and events. I was also involved in the [Open Beatz Festival](https://www.openbeatz.de) with 15.000 visitors.
 

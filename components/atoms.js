@@ -6,13 +6,17 @@ const gradient_cool = "bg-gradient-to-b from-primary to-blue-300 dark:to-blue-50
 import NextImage from "next/image";
 import NextLink from "next/link";
 
-export function Container({ children }) {
+export function Container({ children , size}) {
   return (
-    <div className="max-w-3xl container mx-auto px-4">
+    <div className={`container mx-auto px-4 ${size}`}>
       {children}
     </div>
   );
 }
+Container.defaultProps = {
+  size: "max-w-3xl",
+};
+
 
 export function Subline({ children }) {
   return (

@@ -6,7 +6,7 @@ import Styles from "../../styles/post.module.css";
 import Head from "next/head";
 import About from "@components/about";
 
-import { Heading, Homelink } from "@components/atoms"
+import { Heading } from "@components/atoms"
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
