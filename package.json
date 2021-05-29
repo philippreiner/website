@@ -12,6 +12,7 @@
     "@emotion/styled": "^11.0.0",
     "@headlessui/react": "^1.2.0",
     "@heroicons/react": "^1.0.1",
+    "@tailwindcss/forms": "^0.3.2",
     "framer-motion": "^2.9.5",
     "gray-matter": "^4.0.2",
     "next": "^10.2.4-canary.0",

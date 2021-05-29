@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'media',
@@ -8,6 +10,7 @@ module.exports = {
         primary: '#001AFF',
         secondary: '#A300FF',
         primarylight: '#3347FF',
+        'blue-gray': colors.blueGray
       }
     },
     container: {
@@ -17,5 +20,7 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
