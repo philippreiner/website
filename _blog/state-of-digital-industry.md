@@ -4,7 +4,7 @@ slogan: 'Thoughts on a recent, regional IHK study about the current progress (Bu
 date: '2021-06-02'
 author: 'Philipp Reiner'
 image: '/images/wifi-iphone.jpg'
-fav: true
+fav: false
 language: 'en'
 ---
 
