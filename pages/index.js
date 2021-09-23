@@ -38,7 +38,7 @@ export default function Home({ allPostsData }) {
 					<Subline>
 						Software should make our life easier, not more complicated. At <a rel="noreferrer" target="_blank" href="https://www.planb.net" class="hover:underline opacity-100 text-planb whitespace-nowrap"><Minilogo name="planb"/>PlanB.</a>, I enable companies to build market-leading digital products and adapt an agile mindset. Earlier I've co-founded <a rel="noreferrer" target="_blank" href="https://www.conclurer.com" class="hover:underline text-black dark:text-white whitespace-nowrap"><Minilogo name="conclurer"/>Conclurer</a>, where my team developed a modular approach to industry 4.0 software and learned alot.
 						&nbsp;<NextLink href="/blog/conversation-starter">
-							<a class="underline">Learn more</a>
+							<a className="underline">Learn more</a>
 						</NextLink>
 					</Subline>
 				</div>
@@ -53,7 +53,7 @@ export default function Home({ allPostsData }) {
 				</div>
 				<div className="-mt-4">
 					<NextLink href="/blog">
-						<a class="text-gray-500 underline">All Posts</a>
+						<a className="text-gray-500 underline">All Posts</a>
 					</NextLink>
 				</div>
 		</div>
