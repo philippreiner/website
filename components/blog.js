@@ -31,7 +31,7 @@ export function Blogpost({ title, id, image, desc, language }) {
               src={image}
               alt={title}
               quality="70"
-              className="object-cover rounded-lg"
+              className="object-cover rounded-sm"
             />
           </div>
           }

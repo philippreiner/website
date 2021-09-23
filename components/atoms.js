@@ -1,7 +1,13 @@
-const gradient = "bg-gradient-to-r from-primary via-secondary to-secondary";
-const gradient_dark = "dark:from-secondary dark:via-purple-500 dark:to-purple-300";
+const gradient = "text-primary";
+const gradient_dark = "dark:text-blue-500";
 const gradient_dark_alt = "dark:from-blue-300 dark:via-blue-500 dark:to-primary";
 const gradient_cool = "bg-gradient-to-b from-primary to-blue-300 dark:to-blue-500 bg-primary flex";
+/*
+
+const gradient = "bg-gradient-to-r from-primary via-secondary to-secondary";
+const gradient_dark = "dark:from-secondary dark:via-purple-500 dark:to-purple-300";
+
+*/
 
 import NextImage from "next/image";
 import NextLink from "next/link";
@@ -20,7 +26,7 @@ Container.defaultProps = {
 
 export function Subline({ children }) {
   return (
-    <div className="sm:text-lg dark:text-gray-400">
+    <div className="sm:text-lg dark:text-gray-100">
       {children}
     </div>
   );

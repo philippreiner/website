@@ -1,20 +1,25 @@
 ---
 title: 'Conversation Starter'
 slogan: 'Learn more about me with those topics and interests (May 2021).'
-date: '2021-05-28'
+date: '2021-09-23'
 author: 'Philipp Reiner'
 image: '/static/philipp-reiner.jpg'
 fav: false
 language: 'en'
 ---
 
-While you can learn about my work on [LinkedIn](https://www.linkedin.com/in/philippreiner/) here are some conversation starters.
+While you can learn about my work on [LinkedIn](https://www.linkedin.com/in/philippreiner/) here are some conversation starters and points of interest.
 
 ## Working Life
 - **Startups and Entrepreneurship** I believe that innovation and therefore progress is a result of taking the risk to build something from the ground up.
 - **Agile and Collaboration** Leading people to build something complex and huge in small iterations by using agile methods such as Scrum.
 - **Future Business Models** The world is changing and so are companies. How businesses work and make money fascinate me - from a local restaurant to global supply chains.
 - **Teaching others** I'm doing lectures at my local university (DHBW Heidenheim) about Stratic Supply Chain Management and Web Programming. 
+- **Industry and Manufacturing** Over the years I've seen many factories from the inside and I (try to) understand how this will look like in the future.
+
+## About the world
+- **Climate Crisis** Our (western) wealth and lifestyle isn't build sustainable and destroys the planet. This has to stop. I try to lower my carbon footprint but also think that we need to move the needle together (e.g. from politics). I'm positive that humankind will figure this out.
+- **Equality** I would like to give people from diverse backgrounds equal opportunities. This is sometimes harder than expected, needs constant attention and we can still improve, especially in the tech sector.
 
 ![old cameras of mine](/images/cameras.jpg)
 
@@ -32,4 +37,3 @@ While you can learn about my work on [LinkedIn](https://www.linkedin.com/in/phil
 - **Self-Improvement** Setting personal goals, keep my body in shape and thinking how I can improve myself and support others is a live-long task of mine.
 
 Beside I can enjoy a good show on Netflix, go to the cinema or just drink a beer out in the sun with friends. Want to join? Drop me a message.
-
