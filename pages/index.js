@@ -25,7 +25,7 @@ export default function Home({ allPostsData }) {
 				<div className="py-4 md:-ml-8 md:-mr-8 md:pb-8">
 					<NextImage
 						width="1600"
-						height="900"
+						height="1000"
 						quality="80"
 						src={philipp}
 						alt="Philipp Reiner"

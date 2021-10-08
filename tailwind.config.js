@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       colors: {
         planb: '#ff5100',
-        primary: '#3E82B9', //#001AFF
+        primary: '#0063a6', //#001AFF,3E82B9
         secondary: '#A300FF',
         primarylight: '#3347FF',
         'blue-gray': colors.blueGray
