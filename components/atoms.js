@@ -34,14 +34,14 @@ export function Subline({ children }) {
 
 export function InlineHeading({ children }) {
   return (
-    <h1 className={`inline-block bg-clip-text text-transparent ${gradient} ${gradient_dark}`}>
+    <h1 className={`inline-block bg-clip-text ${gradient} ${gradient_dark}`}>
       {children} 
     </h1>
   );
 }
 export function Heading({ children }) {
   return (
-    <h1 className={`inline-block text-2xl sm:text-3xl md:text-4xl font-heading bg-clip-text text-transparent ${gradient} dark:text-white`}>
+    <h1 className={`inline-block text-2xl sm:text-3xl md:text-4xl font-heading bg-clip-text ${gradient} dark:text-white`}>
       {children} 
     </h1>
   );
