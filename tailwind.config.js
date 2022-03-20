@@ -1,24 +1,19 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: 'media',
+  content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: {
         planb: '#ff5100',
         primary: '#0063a6', //#001AFF,3E82B9
         secondary: '#A300FF',
-        primarylight: '#3347FF',
-        'blue-gray': colors.blueGray
+        primarylight: '#3347FF'
       }
     },
     container: {
       center: false,
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [
     require('@tailwindcss/forms'),
