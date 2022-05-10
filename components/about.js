@@ -7,7 +7,7 @@ export function Tagline() {
   return (
       <Headline>
       <InlineHeading>Philipp Reiner&nbsp;</InlineHeading>
-      is an expert for digital business models. I combine strategy, user experience and software to create a sustainable future today.
+      is an expert for Digital Business Models, leads software teams and always thinks about tomorrow.
       </Headline>
   );
 }
