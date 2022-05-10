@@ -1,5 +1,5 @@
 const gradient = "text-primary";
-const gradient_dark = "dark:text-blue-500";
+const gradient_dark = "dark:text-blue-600";
 const gradient_dark_alt = "dark:from-blue-300 dark:via-blue-500 dark:to-primary";
 const gradient_cool = "bg-gradient-to-b from-primary to-blue-300 dark:to-blue-500 bg-primary flex";
 /*
@@ -92,5 +92,22 @@ export function LanguagePill({ label }) {
   <span className="bg-gray-200 uppercase dark:bg-gray-700 inline-block text-gray-600 dark:text-gray-400 rounded-sm py-0.5 mr-1 px-1 transform -translate-y-0.5 text-xs">
     {label}
   </span>
+  );
+}
+
+export function WorkCard({ title, label }) {
+  return (
+  <div className="mb-3 p-4 rounded md:px-8 leading-snug ,dpy-6 bg-gray-100 dark:bg-gray-800">
+    <span className="block font-bold">{title}</span>
+    <span className="text-gray-500">{label}</span>
+  </div>
+  );
+}
+
+export function WorkFrame({ title, label }) {
+  return (
+  <div className="py-2 rounded md:px-8 leading-snug md:py-3 dark:bg-gray-800">
+    <span className="block">{title}</span>
+  </div>
   );
 }
