@@ -7,7 +7,7 @@ export function Tagline() {
   return (
       <Headline>
       <InlineHeading>Philipp Reiner&nbsp;</InlineHeading>
-      manages software teams, researches digital business models and always thinks about tomorrow.
+      empowers software teams, researches digital business models and always thinks about tomorrow.
       </Headline>
   );
 }
