@@ -26,7 +26,7 @@ export default function Layout({ children }) {
 
       <div className="text-center text-sm py-4 md:py-8 mb-4">
         <NextLink href="/impressum">
-          <a class="text-gray-500 hover:underline">Imprint & Privacy</a>
+          <a class="dark:text-gray-500 text-paper-700 decoration-2 hover:underline">Imprint & Privacy</a>
         </NextLink>
       </div>
       <script

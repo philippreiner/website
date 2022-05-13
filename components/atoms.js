@@ -50,7 +50,7 @@ export function Heading({ children }) {
 
 export function Headline({ children }) {
   return (
-    <div className="text-xl sm:text-2xl md:text-3xl leading-normal font-heading">
+    <div className="text-xl sm:text-2xl leading-normal font-heading">
       {children}
     </div>
   );
@@ -98,9 +98,9 @@ export function LanguagePill({ label }) {
 
 export function WorkCard({ title, label }) {
   return (
-  <div className="mb-3 p-4 rounded md:px-8 leading-snug py-6 bg-gray-100 dark:bg-gray-800">
+  <div className="mb-3 p-4 rounded-lg md:px-8 leading-snug py-6 transition-colors bg-paper-300 hover:bg-paper-400  dark:bg-gray-800 dark:hover:bg-gray-700">
     <span className="block font-bold">{title}</span>
-    <span className="text-gray-500">{label}</span>
+    <span className="text-paper-900 dark:text-gray-500">{label}</span>
   </div>
   );
 }
@@ -109,7 +109,7 @@ export function WorkFrame({ title, label }) {
   return (
     <div className="py-2">
       <span className="font-bold">{title}</span>&nbsp;&nbsp;
-      <span className="text-gray-500">{label}</span>
+      <span className="text-paper-900 dark:text-gray-500">{label}</span>
     </div>
   );
 }

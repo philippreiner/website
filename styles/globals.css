@@ -10,8 +10,9 @@ a {
   color:#fff;
 }
 body {
-  /*background-image: radial-gradient(96.25% 65.82% at 0 0,#dedede 0,rgba(171,117,255,0) 100%);*/
+  /*background-image: radial-gradient(96.25% 65.82% at 0 0,#ebebeb 0,rgba(171,117,255,0) 100%);*/
   background-repeat: no-repeat;
+  background-color: #f7f4ef;
 }
 .font-heading {
   font-family: system-ui,-apple-system,sans-serif;
