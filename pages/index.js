@@ -1,73 +1,63 @@
 import NextImage from "next/image";
-import { getSortedPostsData } from "../lib/posts";
 import Layout from "@components/layout";
 import { Container, WorkCard, WorkFrame, Subline} from "@components/atoms"
 import Contacts from "@components/contacts"
 import NextLink from "next/link";
-import { Blogpost } from "@components/blog"
 import { Tagline } from "@components/about";
 import philipp from '../public/static/philipp-reiner.jpg'
 
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
-  return {
-    props: {
-      allPostsData,
-    },
-  };
-}
 
 export default function Home({ allPostsData }) {
   return (
     <Layout>
-		<Container>
-			<div className="pt-4 sm:pt-10">
-				<div className="py-4 md:-ml-8 md:-mr-8 md:pb-8">
-					<NextImage
-						width="1600"
-						height="1000"
-						quality="80"
+		<Container size="max-w-screen-md">
+		<section className="pt-4 pb-4 md:pt-8 lg:pt-12 md:pb-8 lg:pb-12">
+				<div className="pb-2 md:pb-6 lg:-ml-6 lg:-mr-6">
+				<NextImage
+						width="800"
+						height="500"
+						quality="75"
 						src={philipp}
 						alt="Philipp Reiner"
 						placeholder="blur"
-						className="object-scale-down rounded"
+						className="rounded-lg"
 					/>
 				</div>
-				<div className="pb-4 md:pb-6">
+
 					<Tagline/>
-				</div>
-				<div className="pb-4 md:pb-6">
-					<Subline>
-					I'm Philipp, a software developer turned entrepreneur. My biggest strength is to understand complex challenges superfast, breaking them down and create simple but powerful solutions. I believe Software should make our life easier, not more complicated.
-					</Subline>
-				</div>
-				<div className="pb-6 md:pb-10 lg:pb-12">
+					<div className="pb-2 md:pt-2 md:pb-6">
+						<Subline>
+						Hey I'm Philipp, a software developer turned entrepreneur. My biggest strength is to understand complex challenges superfast, break them down and find simple solutions. <br/>I believe Software should make our life easier, not more complicated.
+						</Subline>
+					</div>
 					<Contacts/>
-				</div>
+		</section>
+		<section className="pb-6 md:pb-12">
 
-				<div className="pb-6">
-					<h3 className="font-heading text-2xl">Now</h3>
-				</div>
-				<div className="pb-6 md:pb-12">
-				<a href="https://www.planb.net" target="_blank">
-					<WorkCard title="Engineering Manager at PlanB." label="Leading developers, manage customer expectations and establish an agile mindset"/>
-				</a>
-				<a href="https://www.maxe.io" target="_blank">
-					<WorkCard title="Maxe Smart Service" label="Exploring new business models with collaborative service software"/>
-				</a>
-				<WorkFrame title="Productmode" label="How can non-tech companies build great software on the first try?"/>
-				<NextLink href="/eaas" className="hover:underline decoration-2">
-					<a>
-						<WorkFrame title="Equipment-as-a-Service" label="Researched 140 companies in my widely shared landscape"/>
-					</a>
-				</NextLink>
-				</div>
+		<h3 className="font-heading text-2xl pb-2 md:pb-4">Now</h3>
+
+<a href="https://www.planb.net" target="_blank">
+	<WorkCard title="Engineering Manager at PlanB." label="Leading developers, manage customer expectations and establish an agile mindset"/>
+</a>
+<a href="https://www.maxe.io" target="_blank">
+	<WorkCard title="Maxe Smart Service" label="Exploring new business models with collaborative service software"/>
+</a>
+<WorkFrame title="Productmode" label="How can non-tech companies build great software on the first try?"/>
+<NextLink href="/eaas">
+	<a className="hover:underline decoration-2">
+		<WorkFrame title="Equipment-as-a-Service" label="Researched 140 companies in my widely shared landscape"/>
+	</a>
+</NextLink>
 
 
-				<div className="pb-6">
-					<h3 className="font-heading text-2xl">Past Experience</h3>
-				</div>
-				<div className="pb-6 md:pb-12">
+		</section>
+		<section className="pb-6 md:pb-12">
+
+
+
+					<h3 className="font-heading text-2xl pb-2 md:pb-4">Past Experience</h3>
+	
+				
 				<a href="https://www.conclurer.com"  className="hover:underline decoration-2" target="_blank">
 					<WorkFrame title="Founded Conclurer" label="Build and sold a low-code industry 4.0 software to 40 customers" />
 				</a>
@@ -87,22 +77,23 @@ export default function Home({ allPostsData }) {
 					<WorkFrame title="Lecture Students" label="Teached about Supply Chain Management and Web-Programming"/>
 				</a>
 				<WorkFrame title="Bachelor Thesis" label="Researched Analytics dashboards for purchasing departments"/>
-				</div>
-				
-				<div className="pb-6">
-					<h3 className="font-heading text-2xl text-gray-500 pb-6">Learn more</h3>
-					<NextLink href="/blog/conversation-starter" className="hover:underline decoration-2">
-						<a>
+		
+				</section>
+				<section className="pb-6 md:pb-12">
+		
+					<h3 className="font-heading text-2xl dark:text-gray-500 pb-2 md:pb-4">Learn more</h3>
+					<NextLink href="/blog/conversation-starter">
+					<a className="hover:underline decoration-2">
 							<WorkFrame title="Conversation starters"/>
 						</a>
 					</NextLink>
-					<NextLink href="/blog" className="hover:underline decoration-2">
-						<a>
+					<NextLink href="/blog" >
+					<a className="hover:underline decoration-2">
 							<WorkFrame title="Blogposts"/>
 						</a>
 					</NextLink>
-				</div>
-		</div>
+			</section>
+		
 	</Container>
 
     </Layout>

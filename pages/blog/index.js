@@ -1,8 +1,6 @@
-import NextImage from "next/image";
 import { getSortedPostsData } from "../../lib/posts";
 import Layout from "@components/layout";
 import { Heading } from "@components/atoms"
-import Contacts from "@components/contacts";
 import Page from "@components/page";
 
 import { Blogpost } from "@components/blog"

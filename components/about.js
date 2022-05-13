@@ -7,7 +7,7 @@ export function Tagline() {
   return (
       <Headline>
       <InlineHeading>Philipp Reiner&nbsp;</InlineHeading>
-      is an expert for Digital Business Models, manages software teams and always thinks about tomorrow.
+      manages software teams, researches digital business models and always thinks about tomorrow.
       </Headline>
   );
 }
@@ -22,3 +22,4 @@ export default function About() {
     </section>
   );
 }
+//       is an expert for Business Models, manages software teams and always thinks about tomorrow.
