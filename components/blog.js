@@ -7,7 +7,7 @@ export function Blogpost({ title, id, image, desc, language }) {
   var url = '/blog/' + id ;
 
   return (
-    <div id={id} class="pb-4 md:pb-12">
+    <div id={id} className="pb-4 md:pb-12">
       <NextLink href={url}>
         <a className="flex items-center">
           <div className="flex-grow">
