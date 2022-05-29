@@ -27,10 +27,18 @@ export default function Home({ allPostsData }) {
 				<WorkCard title="🤝 Working with me" label="I'm open for new challenges. Download my CV to learn more."/>
 			</a>
 			<NextLink href="/eaas">
-				<a className="hover:underline decoration-2">
-					<WorkCard title="👀 EaaS Landscape" label="Researched 140 companies in my widely shared landscape. Shall I add you as well?"/>
+				<a className="">
+					<WorkCard title="👀 EaaS Landscape" label="Researched 170 companies in my widely shared landscape. Shall I add you as well?"/>
 				</a>
 			</NextLink>
+			</div>
+			<div className="pt-4 md:pt-8">
+			<h3 className="font-heading text-xl pb-2 md:pb-4">We meet...</h3>
+				<ul className="flex flex-col space-y-1.5">
+					<li>Hinterland of Things 2022</li>
+					<li>Hannover Messe 2022</li>
+					<li>Controll Stuttgart 2022</li>
+				</ul>
 			</div>
 		</div>
 		</Container>
