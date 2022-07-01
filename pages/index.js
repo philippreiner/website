@@ -39,11 +39,11 @@ export default function Home({ allPostsData }) {
 <a href="https://www.planb.net" target="_blank">
 	<WorkCard title="Engineering Manager at PlanB." label="Leading developers, manage customer expectations and establish an agile mindset"/>
 </a>
-<NextLink href="/productmode">
-	<a>
-<WorkCard title="Productmode for Product Owners" label="How can non-tech companies build great software on the first try?"/>
+<a href="/productmode"  className="hover:underline decoration-2" target="_blank">
+	<WorkFrame title="Productmode"  className="hover:underline decoration-2" label="How can non-tech companies build great software on the first try?"/>
 </a>
-</NextLink>
+
+
 
 <a href="https://www.maxe.io"  className="hover:underline decoration-2" target="_blank">
 	<WorkFrame title="Maxe Smart Service" label="Exploring new business models with collaborative service software"/>
