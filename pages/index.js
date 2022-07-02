@@ -7,7 +7,7 @@ import { Tagline } from "@components/about";
 import philipp from '../public/static/philipp-reiner.jpg'
 
 
-export default function Home({ allPostsData }) {
+export default function Home() {
   return (
     <Layout>
 		<Container size="max-w-screen-md">
@@ -37,9 +37,9 @@ export default function Home({ allPostsData }) {
 		<h3 className="font-heading text-2xl pb-2 md:pb-4">Now</h3>
 
 <a href="https://www.planb.net" target="_blank">
-	<WorkCard title="Engineering Manager at PlanB." label="Leading developers, manage customer expectations and establish an agile mindset"/>
+	<WorkCard title="Engineering Manager at PlanB." label="Empower developers, manage customer expectations and establish an agile mindset"/>
 </a>
-<a href="/productmode"  className="hover:underline decoration-2" target="_blank">
+<a href="/productmode"  className="hover:underline decoration-2">
 	<WorkFrame title="Productmode"  className="hover:underline decoration-2" label="How can non-tech companies build great software on the first try?"/>
 </a>
 
@@ -53,7 +53,6 @@ export default function Home({ allPostsData }) {
 		<WorkFrame title="Equipment-as-a-Service" label="Researched 140 companies in my widely shared landscape"/>
 	</a>
 </NextLink>
-
 
 		</section>
 		<section className="pb-6 md:pb-12">
