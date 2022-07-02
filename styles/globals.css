@@ -9,7 +9,9 @@ a {
   background-color: rgba(255,0,214,.75);
   color:#fff;
 }
-
+body {
+  background-color: #f7f4ef;
+}
 .font-heading {
   font-family: system-ui,-apple-system,sans-serif;
   font-weight: 800 !important;
