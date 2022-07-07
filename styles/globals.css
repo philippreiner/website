@@ -10,6 +10,7 @@ a {
   color:#fff;
 }
 body {
+  background-repeat: no-repeat;
   background-color: #f7f4ef;
 }
 .font-heading {
@@ -20,7 +21,6 @@ body {
   fill:#000;
 }
 @media (prefers-color-scheme: dark) {
-
   .icon svg {
     fill:#fff;
   }

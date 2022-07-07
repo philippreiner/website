@@ -37,7 +37,7 @@ export default function Home() {
 		<h3 className="font-heading text-2xl pb-2 md:pb-4">Now</h3>
 
 <a href="https://www.planb.net" target="_blank">
-	<WorkCard title="Engineering Manager at PlanB." label="Empower developers, manage customer expectations and establish an agile mindset"/>
+	<WorkCard title="Engineering Manager at PlanB." label="Empower developers, building software and establish an agile mindset"/>
 </a>
 <a href="/productmode"  className="hover:underline decoration-2">
 	<WorkFrame title="Productmode"  className="hover:underline decoration-2" label="How can non-tech companies build great software on the first try?"/>
@@ -46,7 +46,7 @@ export default function Home() {
 
 
 <a href="https://www.maxe.io"  className="hover:underline decoration-2" target="_blank">
-	<WorkFrame title="Maxe Smart Service" label="Exploring new business models with collaborative service software"/>
+	<WorkFrame title="Maxe Smart Service" label="Collaborative service software for industrial OEMs"/>
 </a>
 <NextLink href="/eaas">
 	<a className="hover:underline decoration-2">
