@@ -27,7 +27,7 @@ export default function Home() {
 					<Tagline/>
 					<div className="pb-2 md:pt-2 md:pb-6">
 						<Subline>
-						Hey I'm Philipp, a software developer turned entrepreneur. My biggest strength is to understand complex challenges superfast, break them down and find simple solutions. <br/>I believe Software should make our life easier, not more complicated.
+						Hello – I'm Philipp, a software developer turned entrepreneur. My biggest strength is to understand complex challenges superfast, break them down and find simple solutions. <br/>I believe Software should make our life easier, not more complicated.
 						</Subline>
 					</div>
 					<Contacts/>
@@ -37,7 +37,7 @@ export default function Home() {
 		<h3 className="font-heading text-2xl pb-2 md:pb-4">Now</h3>
 
 <a href="https://www.planb.net" target="_blank">
-	<WorkCard title="Engineering Manager at PlanB." label="Empower developers, building software and establish an agile mindset"/>
+	<WorkCard title="Engineering Manager at PlanB." label="Empower developers, building software and consulting customers"/>
 </a>
 <a href="/productmode"  className="hover:underline decoration-2">
 	<WorkFrame title="Productmode"  className="hover:underline decoration-2" label="How can non-tech companies build great software on the first try?"/>
@@ -45,9 +45,7 @@ export default function Home() {
 
 
 
-<a href="https://www.maxe.io"  className="hover:underline decoration-2" target="_blank">
-	<WorkFrame title="Maxe Smart Service" label="Collaborative service software for industrial OEMs"/>
-</a>
+
 <NextLink href="/eaas">
 	<a className="hover:underline decoration-2">
 		<WorkFrame title="Equipment-as-a-Service" label="Researched 140 companies in my widely shared landscape"/>
@@ -61,22 +59,25 @@ export default function Home() {
 
 					<h3 className="font-heading text-2xl pb-2 md:pb-4">Past Experience</h3>
 	
-				
-				<a href="https://www.conclurer.com"  className="hover:underline decoration-2" target="_blank">
-					<WorkFrame title="Founded Conclurer" label="Build and sold a low-code industry 4.0 software to 40 customers" />
+					<a href="https://www.maxe.io"  className="hover:underline decoration-2" target="_blank">
+					<WorkFrame title="Maxe Smart Service" label="Developed a collaborative industrial service platform"/>
 				</a>
-				<WorkFrame title="Metrology" label="Combined 5 teams and solutions into one innovative platform" />
+				<a href="https://www.conclurer.com"  className="hover:underline decoration-2" target="_blank">
+					<WorkFrame title="Founded Conclurer" label="Build a low-code industry 4.0 software, consulted SMBs" />
+				</a>
+
+				<WorkFrame title="Metrology" label="Combined multiple teams and build one new solution" />
 				<a href="https://www.heidenheimerleben.de"  className="hover:underline decoration-2" target="_blank">
-					<WorkFrame title="HDH Erleben" label="Quickly launched a local livestream shop for 100k visitors"/>
+					<WorkFrame title="HDH Erleben" label="Quickly launched a local livestream shopping experience"/>
 				</a>
 				<a href="https://www.futureofmanufacturing.io"  className="hover:underline decoration-2" target="_blank">
 					<WorkFrame title="Future of Manufacturing" label="Shared my knowledge as one of the first members"/>
 				</a>
 				<WorkFrame title="Aveo" label="Created Digital Manufacturing workshops for Aveo"/>
 				<a href="https://www.cuse.io"  className="hover:underline decoration-2" target="_blank">
-					<WorkFrame title="Predictive Service" label="Developed a predictive maintenance prototype"/>
+					<WorkFrame title="Predictive Service" label="Developed a predictive maintenance MVP"/>
 				</a>
-				<WorkFrame title="Nearstage" label="Founded an up-selling ticketing solution for festivals, sold 60k tickets"/>
+				<WorkFrame title="Nearstage" label="Founded and sold an up-selling ticketing solution for festivals"/>
 				<a href="https://www.heidenheim.dhbw.de"  className="hover:underline decoration-2" target="_blank">
 					<WorkFrame title="Lecture Students" label="Teached about Supply Chain Management and Web-Programming"/>
 				</a>
