@@ -21,7 +21,7 @@ export default function Home() {
 						alt="Philipp Reiner"
 						placeholder="blur"
 						className="rounded-lg"
-					/>
+					/> 
 				</div>
 
 					<Tagline/>
