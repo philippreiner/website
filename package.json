@@ -1,9 +1,9 @@
 {
   "name": "website",
-  "version": "0.7.0",
+  "version": "0.3.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "export NODE_OPTIONS=--openssl-legacy-provider; next dev",
     "build": "next build",
     "start": "next start"
   },
@@ -13,14 +13,14 @@
     "@tailwindcss/forms": "^0.5.0",
     "framer-motion": "^2.9.5",
     "gray-matter": "^4.0.2",
-    "next": "^12.2.4",
-    "preact": "^10.10.1",
+    "next": "^12.1.6",
+    "preact": "^10.8.2",
     "remark": "^13.0.0",
     "remark-html": "^13.0.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.4",
     "postcss": "^8.4.12",
-    "tailwindcss": "^3.1.7"
+    "tailwindcss": "^3.0.23"
   }
 }
