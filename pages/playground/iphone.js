@@ -12,23 +12,33 @@ export default function Impressum({ content }) {
 </div>
 <div class="">
   <div class="h-screen overflow-y-auto snap-y scroll-smooth">
-      <div class="min-h-[90vh] snap-center flex justify-center items-stretch flex-col">
-        <a name="first">Input 1</a>
-        <a href="#second">
-          <div class="aspect-square w-full bg-slate-200 border-slate border-dashed border mt-4"></div>
-        </a>
-
+      <div class="min-h-[75vh] snap-start flex justify-center flex-col">
+        <a name="first">RX</a>
+        <div class="aspect-square w-full bg-slate-200 border-slate border-dashed border mt-4"></div>
+        <a href="#second" className="mt-4 px-8 py-4 bg-blue-500 text-white rounded inline-flex">Continue</a>
       </div>
-      <div class="min-h-[90] snap-center flex justify-center items-stretch flex-col">
-        <a name="second">Input 2</a>
+      <div class="min-h-[75vh] snap-start flex justify-center items-stretch flex-col">
+        <a name="second">Age</a>
         <a href="#third">
-          <div class="aspect-square w-full bg-teal-200 border-slate border-dashed border mt-4"></div>
+          <div class="aspect-square w-full bg-teal-200 border-slate border-dashed border p-4 mt-4">Selection</div>
+        </a>
+        <div className="bg-teal-100 rounded h-24 mt-4">
+          Optimized?
+        </div>
+      </div>
+      <div class="min-h-[75vh] snap-start flex justify-center items-stretch flex-col">
+        <a name="third">Color</a>
+        <a href="#quatro">
+          <div class="aspect-square w-full bg-teal-200 border-slate border-dashed border p-4 mt-4">Selection</div>
         </a>
       </div>
-      <div class="min-h-[90vh] snap-center flex justify-center items-stretch flex-col">
-        <a name="third">Input 3</a>
-        <div class="aspect-square w-full bg-indigo border-slate border-dashed border mt-4"></div>
+      <div class="min-h-[75vh] snap-start flex justify-center items-stretch flex-col">
+        <a name="quatro">Personal</a>
+        <a href="#next">
+          <div class="p-8 w-full bg-teal-200 border-slate border-dashed border mt-4">Input</div>
+        </a>
       </div>
+      
     </div>
 </div>
   </div>
