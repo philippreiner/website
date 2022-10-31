@@ -34,7 +34,7 @@ export default function Layout({ children }) {
       <script 
         async 
         src="/js/t.js" 
-        data-ackee-server="https://philippreiner.info" 
+        data-ackee-server="https://www.philippreiner.info" 
         data-ackee-domain-id="9c20f8ac-780f-4d14-8928-6e7441f1b4b0"
         data-ackee-opts='{ "ignoreLocalhost": true, "detailed": true }'
       />
