@@ -25,10 +25,19 @@ export default function Layout({ children }) {
       {children}
 
       <div className="text-center text-sm py-4 md:py-8 mb-4">
-        <NextLink href="/impressum">
-          <a className="dark:text-gray-500 text-paper-700 decoration-2 hover:underline">Imprint & Privacy</a>
+        <NextLink
+          href="/impressum"
+          className="dark:text-gray-500 text-paper-700 decoration-2 hover:underline">
+          Imprint & Privacy
         </NextLink>
       </div>
+      <script 
+        async 
+        src="/js/t.js" 
+        data-ackee-server="https://philippreiner.info" 
+        data-ackee-domain-id="9c20f8ac-780f-4d14-8928-6e7441f1b4b0"
+        data-ackee-opts='{ "ignoreLocalhost": true, "detailed": true }'
+      />
       <script
           async
           defer

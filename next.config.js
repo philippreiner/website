@@ -8,6 +8,14 @@ module.exports = {
             {
                 source: '/api/event', // Or '/api/event/' if you have `trailingSlash: true` in this config
                 destination: 'https://plausible.io/api/event'
+            },
+            {
+                source: '/js/t.js', 
+                destination: 'https://count.reiner.info/tracker.js'
+            },
+            {
+                source: '/api', 
+                destination: 'https://count.reiner.info/api'
             }
         ];
     },
