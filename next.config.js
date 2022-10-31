@@ -14,7 +14,7 @@ module.exports = {
                 destination: 'https://count.reiner.info/tracker.js'
             },
             {
-                source: 'ackee/api', 
+                source: '/ackee/api', 
                 destination: 'https://count.reiner.info/api'
             }
         ];
