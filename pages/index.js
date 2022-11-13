@@ -1,6 +1,6 @@
 import NextImage from "next/image";
 import Layout from "@components/layout";
-import { Container, WorkFrame, Subline, SectionTitle, DrawnLine} from "@components/atoms"
+import { Container, WorkFrame, Subline, SectionTitle, BlurBg} from "@components/atoms"
 import Contacts from "@components/contacts"
 import NextLink from "next/link";
 import { Tagline } from "@components/about";
@@ -9,6 +9,7 @@ import philipp from '../public/static/reiner-web.jpg'
 export default function Home() {
   return (
       <Layout>
+        <BlurBg/>
           <Container size="max-w-5xl">
             <div className="md:grid md:grid-cols-[1fr,2fr] md:gap-12 lg:gap-12 pt-6 md:pt-20 lg:pt-32">
                <aside className="">
@@ -21,10 +22,10 @@ export default function Home() {
                             src={philipp}
                             alt="Philipp Reiner"
                             placeholder="blur"
-                            className="md:rounded-lg rounded-full aspect-square md:aspect-auto object-cover object-top w-full max-w-[200px] md:max-w-none"
+                            className="shadow-paper-700/20 dark:shadow-slate-900/90 shadow-lg md:rounded-lg rounded-full aspect-square md:aspect-auto object-cover object-top w-full max-w-[200px] md:max-w-none"
                         /> 
                     </div>
-                    <div className="lg:block hidden">
+                    <div className="lg:block hidden mt-6">
                         <Contacts direction={"col"}/>
                     </div>
 
@@ -74,7 +75,7 @@ export default function Home() {
                     <section className="py-3 md:py-6">
                     <SectionTitle>Past Experience</SectionTitle>
                     <a href="https://www.conclurer.com"  className="hover:underline decoration-2" target="_blank">
-                      <WorkFrame title="Founded Conclurer" label="Build a low-code industry 4.0 software, consulted SMBs" />
+                      <WorkFrame title="Co-Founder Conclurer" label="Build a low-code industry 4.0 software, consulted SMBs" />
                   </a>
 
 
