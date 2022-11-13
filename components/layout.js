@@ -27,6 +27,7 @@ export default function Layout({ children }) {
       <div className="text-center text-sm py-4 md:py-8 mb-4">
         <NextLink
           href="/impressum"
+          prefetch={false}
           className="dark:text-gray-500 text-paper-700 decoration-2 hover:underline">
           Imprint & Privacy
         </NextLink>
@@ -38,12 +39,6 @@ export default function Layout({ children }) {
         data-ackee-domain-id="9c20f8ac-780f-4d14-8928-6e7441f1b4b0"
         data-ackee-opts='{ "ignoreLocalhost": true, "detailed": true }'
       />
-      <script
-          async
-          defer
-          data-domain="www.philippreiner.info"
-          src="/js/p.js"
-        />
     </div>
   );
 }

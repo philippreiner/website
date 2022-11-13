@@ -14,8 +14,8 @@ body {
   background-color: #f7f4ef;
 }
 .font-heading {
-  font-family: system-ui,-apple-system,sans-serif;
-  font-weight: 800 !important;
+  font-family: "Figtree", system-ui, sans-serif;
+  font-weight: 700 !important;
 }
 .icon svg{
   fill:#000;

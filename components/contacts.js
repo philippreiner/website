@@ -1,15 +1,17 @@
 
-import { AtSymbolIcon } from '@heroicons/react/solid'
-export default function Contacts() {
-  const linkstyle = "hover:text-blue-400 font-bold hover:underline text-primary dark:text-blue-600 items-center flex";
+import { AtSymbolIcon } from '@heroicons/react/24/solid'
+
+export default function Contacts({direction}) {
+  const linkstyle = "hover:text-blue-400 font-bold hover:underline text-primary dark:text-blue-600 items-center flex space-x-1.5";
+
+  var style = "flex flex-col md:flex-row"
+  if(direction === "col") {
+    style = "flex flex-col md:space-y-3 lg:space-y-5"
+  }
 
   return (
-    <ul className="flex flex-col md:flex-row">
-      <li className="pr-4 pb-2 md:pb-0 hidden flex">
-        <a href="https://www.nonewmachines.com" className={linkstyle} >
-          <span>Newsletter</span>
-        </a>
-      </li>
+    <ul className={style}>
+
       <li className="pr-6 pb-2 md:pb-0">
         <a href="mailto:hey@philippreiner.info" className={linkstyle}>
           <AtSymbolIcon className='w-5 h-5'/>
@@ -37,6 +39,10 @@ export default function Contacts() {
     </ul>
   );
 }
+
+Contacts.defaultProps = {
+  direction: "row",
+};
 
 export function Linkedin() {
   return (

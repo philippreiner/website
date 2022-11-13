@@ -1,5 +1,5 @@
 
-import {InlineHeading, Headline} from "@components/atoms"
+import {InlineHeading, Headline, DrawnLine} from "@components/atoms"
 import Contacts from "@components/contacts"
 
 
@@ -14,7 +14,11 @@ export function Tagline() {
 
 export default function About() {
   return (
-    <section className="mt-4 md:mt-8 py-4 md:py-12 border-t-2 border-gray-200 dark:border-gray-800">
+    <section className="mt-4 md:mt-8 py-4 md:py-6">
+
+          <div className="mb-6 md:mb-8">
+            <DrawnLine/>
+          </div>
           <Tagline/>
           <div className="pt-4 md:pt-6">
             <Contacts/>
