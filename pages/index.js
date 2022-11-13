@@ -51,19 +51,15 @@ export default function Home() {
                         <a href="https://www.planb.net" className="hover:underline decoration-2" target="_blank">
                             <WorkFrame title="Engineering Manager at PlanB." label="Empower developers, building software and consulting customers"/>
                                 </a>
-
-
                                 <NextLink href="/eaas" className="hover:underline decoration-2">
 
                                     <WorkFrame title="Equipment-as-a-Service Landscape" label="Researching industrial companies service offerings"/>
 
                                 </NextLink>
-
-
                     </section>
                     <section className="py-3 md:py-6">
                     <SectionTitle>Projects</SectionTitle>
-                        <NextLink href="/productmode"  className="hover:underline decoration-2">
+                        <NextLink prefetch={false} href="/productmode"  className="hover:underline decoration-2">
                                     <WorkFrame title="Productmode"  className="hover:underline decoration-2" label="Using AI and Automation to build great software on the first try"/>
                                 </NextLink>
                                 <a href="https://www.maxe.io"  className="hover:underline decoration-2" target="_blank">

@@ -27,6 +27,7 @@ export default function Layout({ children }) {
       <div className="text-center text-sm py-4 md:py-8 mb-4">
         <NextLink
           href="/impressum"
+          prefetch={false}
           className="dark:text-gray-500 text-paper-700 decoration-2 hover:underline">
           Imprint & Privacy
         </NextLink>

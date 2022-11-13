@@ -44,10 +44,10 @@ export default function Post({ postData }) {
         </div>
         <article>
           <div className={Styles.content} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-          <div className="text-gray-500 text-sm pt-4 flex items-center">
+          <div className="text-paper-900 dark:text-gray-500 text-sm pt-4 flex items-center">
                 <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
                   <circle cx="12" cy="12" r="7.25" stroke="currentColor" stroke-width="1.5"></circle>
-                  <path stroke="currentColor" stroke-width="1.5" d="M12 8V12L14 14"></path>
+                  <path stroke="currentColor" strokeWidth="1.5" d="M12 8V12L14 14"></path>
                 </svg>
                 {postData.date}
           </div>
@@ -56,15 +56,6 @@ export default function Post({ postData }) {
           <About/>
         </div>
 
-        <div className="hidden pt-4 mt-4 md:mt-8 border-t-2 border-gray-200 dark:border-gray-800 md:pt-8 pb-4">
-            <div className="text-gray-500 flex items-center">
-              <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
-                <circle cx="12" cy="12" r="7.25" stroke="currentColor" stroke-width="1.5"></circle>
-                <path stroke="currentColor" stroke-width="1.5" d="M12 8V12L14 14"></path>
-              </svg>
-              {postData.date}
-            </div>
-        </div>
 
       </Page>
     </Layout>
