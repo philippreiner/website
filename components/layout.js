@@ -38,12 +38,6 @@ export default function Layout({ children }) {
         data-ackee-domain-id="9c20f8ac-780f-4d14-8928-6e7441f1b4b0"
         data-ackee-opts='{ "ignoreLocalhost": true, "detailed": true }'
       />
-      <script
-          async
-          defer
-          data-domain="www.philippreiner.info"
-          src="/js/p.js"
-        />
     </div>
   );
 }
