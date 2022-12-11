@@ -15,10 +15,6 @@ export function Tagline() {
 export default function About() {
   return (
     <section className="mt-4 md:mt-8 py-4 md:py-6">
-
-          <div className="mb-6 md:mb-8">
-            <DrawnLine/>
-          </div>
           <Tagline/>
           <div className="pt-4 md:pt-6">
             <Contacts/>
