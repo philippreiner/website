@@ -1,15 +1,28 @@
 import NextImage from "next/image";
+import Head from "next/head";
 import Layout from "@components/layout";
-import { Container, WorkFrame, Subline, SectionTitle, BlurBg} from "@components/atoms"
+import { Container, WorkFrame, Subline, SectionTitle} from "@components/atoms"
 import Contacts from "@components/contacts"
 import NextLink from "next/link";
 import { Tagline } from "@components/about";
 import philipp from '../public/static/reiner-web.jpg'
+import blurDarkSvg from '../public/static/blur-dark.svg'
+import blurLightSvg from '../public/static/blur-light.svg'
 
 export default function Home() {
   return (
       <Layout>
-        <BlurBg/>
+        <Head>
+            <title>Philipp Reiner - Engineering Manager</title>
+        </Head>
+        <div className="top-0 left-0 right-0 -z-10 fixed md:opacity-90">
+            <div className="dark:hidden">
+                <NextImage src={blurLightSvg} />
+            </div>
+            <div className="hidden dark:block">
+                <NextImage src={blurDarkSvg} />
+            </div>
+        </div>
           <Container size="max-w-5xl">
             <div className="md:grid md:grid-cols-[1fr,2fr] md:gap-12 lg:gap-12 pt-6 md:pt-20 lg:pt-32">
                <aside className="">
