@@ -3,11 +3,10 @@ import Layout from "../components/layout";
 import Page from "../components/page";
 import Styles from "../styles/post.module.css";
 import { getContent } from "../lib/content";
-
-import NextImage from "next/image"
+import { Headline} from "@components/atoms"
 
 export async function getStaticProps({ params }) {
-  const content = await getContent("about");
+  const content = await getContent("404");
   return {
     props: {
       content,
@@ -15,23 +14,18 @@ export async function getStaticProps({ params }) {
   };
 }
 
-export default function Impressum({ content }) {
+export default function Custom404({ content }) {
   return (
     <Layout>
       <Head>
-        <title>About Philipp Reiner</title>
+        <title>Imprint</title>
       </Head>
       <Page>
-        <div className="pb-4 md:pb-8">
-					<NextImage
-						width="200"
-						height="200"
-						quality="70"
-						src="/static/philipp-reiner.jpg"
-						alt="Philipp Reiner"
-						className="object-scale-down rounded-lg"
-					/>
-				</div>
+        <div className="pb-4">
+          <Headline>
+            Page not found            
+          </Headline>
+        </div>
         <div
           className={Styles.content}
           dangerouslySetInnerHTML={{ __html: content }}
