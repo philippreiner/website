@@ -17,7 +17,10 @@ export default function Layout({ children }) {
         <link rel="icon" href="/favicon.ico" />
         <link rel="canonical" href={canonicalURL} />
 
+        <meta property="og:site_name" content="Philipp Reiner Personal Website"/>
         <meta property="og:title" content={name}/>
+        <meta property="og:url" content={canonicalURL}/>
+        <meta property="og:type" content="website"/>
         <meta name="author" content={name}/>
         <meta name="description" content="Philipp Reiner is an expert for digital business models"/>
       </Head>

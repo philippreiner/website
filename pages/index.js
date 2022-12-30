@@ -14,6 +14,8 @@ export default function Home() {
       <Layout>
         <Head>
             <title>Philipp Reiner - Engineering Manager</title>
+            <meta property="og:image" content="/static/reiner-web.jpg"/>
+            <meta property="og:image:alt" content="Philipp Reiner Portrait"/>
         </Head>
         <div className="top-0 left-0 right-0 -z-10 fixed md:opacity-90">
             <div className="dark:hidden">
@@ -28,15 +30,18 @@ export default function Home() {
                <aside className="">
                 <div className="lg:sticky top-6 mb-6">
                     <div className="flex justify-center w-full md:mb-3">
-                    <NextImage
-                            width="400"
-                            height="578"
+                        <figure className="profile-picture">
+                        <NextImage
+                            width="443"
+                            height="640"
                             quality="75"
                             src={philipp}
-                            alt="Philipp Reiner"
+                            alt="Philipp Reiner Portrait"
                             placeholder="blur"
                             className="shadow-paper-700/20 dark:shadow-slate-900/90 shadow-lg md:rounded-lg rounded-full aspect-square md:aspect-auto object-cover object-top w-full max-w-[200px] md:max-w-none"
-                        /> 
+                        />
+                        <figcaption className="sr-only">Philipp Reiner and Engineering Manager at work.</figcaption>
+                        </figure>
                     </div>
                     <div className="lg:block hidden mt-6">
                         <Contacts direction={"col"}/>
