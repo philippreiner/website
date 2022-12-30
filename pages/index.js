@@ -40,7 +40,7 @@ export default function Home() {
                             placeholder="blur"
                             className="shadow-paper-700/20 dark:shadow-slate-900/90 shadow-lg md:rounded-lg rounded-full aspect-square md:aspect-auto object-cover object-top w-full max-w-[200px] md:max-w-none"
                         />
-                        <figcaption className="sr-only">Philipp Reiner and Engineering Manager at work.</figcaption>
+                        <figcaption className="sr-only">Philipp Reiner an Engineering Manager at work.</figcaption>
                         </figure>
                     </div>
                     <div className="lg:block hidden mt-6">
