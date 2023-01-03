@@ -1,15 +1,15 @@
-import { getAllPostIds, getPostData } from "../lib/posts";
+import { getAllProjectIds, getProjectData } from "../lib/projects";
 import Layout from "@components/layout";
 
-import Page from "@components/page";
 import Styles from "../styles/post.module.css";
 import Head from "next/head";
-import About from "@components/about";
+import Contacts from "@components/contacts";
+import NextImage from "next/image";
 
-import { Heading } from "@components/atoms"
+import { Heading, Container, Homelink, } from "@components/atoms"
 
 export async function getStaticProps({ params }) {
-  const postData = await getPostData(params.id);
+  const postData = await getProjectData(params.id);
   return {
     props: {
       postData,
@@ -18,14 +18,14 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const paths = getAllPostIds();
+  const paths = getAllProjectIds();
   return {
     paths,
     fallback: false,
   };
 }
-export default function Post({ postData }) {
-  var title = postData.title + ' - Philipp Reiner'
+export default function Project({ postData }) {
+  var title = `${postData.title} - Philipp Reiner`
 
   return (
     <Layout>
@@ -36,28 +36,38 @@ export default function Post({ postData }) {
         <meta property="og:image" content={postData.image} />
         <meta name="description" content={postData.slogan} />
       </Head>
-      <Page>
-        <div className="pb-4">
-          <Heading>
-            {postData.title}
-          </Heading>
+      <Container size="max-w-screen-2xl">
+        <div className="py-4 md:py-8 md:px-4">
+          <Homelink/>
         </div>
-        <article>
-          <div className={Styles.content} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-          <div className="text-paper-900 dark:text-gray-500 text-sm pt-4 flex items-center">
-                <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
-                  <circle cx="12" cy="12" r="7.25" stroke="currentColor" stroke-width="1.5"></circle>
-                  <path stroke="currentColor" strokeWidth="1.5" d="M12 8V12L14 14"></path>
-                </svg>
-                {postData.date}
+        </Container>
+      <Container size="max-w-screen-2xl">
+          <div className="lg:grid gap-8 xl:gap-16 grid-cols-2 lg:grid-cols-5 md:px-4">
+            <div className="lg:col-start-3 lg:col-span-3 pt-2 pb-4">
+              <Heading>
+              {postData.title}
+              </Heading>
+            </div>
+            <aside className="pb-4 lg:col-span-2">
+              <div className="lg:sticky top-4">
+                <figure>
+                  <NextImage
+                    width="600"
+                    height="400"
+                    src={postData.image}
+                    alt={title}
+                    quality="70"
+                    className="object-cover rounded-lg"
+                  />
+                </figure>
+              </div>
+            </aside>
+            <main className="lg:col-span-3 2xl:pr-[120px] md:pb-16">
+                <div className={Styles.content} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+            </main>
           </div>
-        </article>
-        <div className="pt-2 pb-4">
-          <About/>
-        </div>
-
-
-      </Page>
+      </Container>
+          
     </Layout>
   );
 }

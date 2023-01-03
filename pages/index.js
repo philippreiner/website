@@ -46,7 +46,6 @@ export default function Home() {
                     <div className="lg:block hidden mt-6">
                         <Contacts direction={"col"}/>
                     </div>
-
                 </div>
                </aside>
                 <main className="">
@@ -57,7 +56,7 @@ export default function Home() {
                             Hi, I'm Philipp. My biggest strength is to understand complex challenges fast, break them down and find straight-forward solutions. I believe Software should make our life easier, not more complicated.
                             </Subline>
                             <Subline>
-                                Beside the digital stuff, I enjoy capturing moments with my cameras, explaining electric cars and go on a local hike. <NextLink href="/blog/conversation-starter"  className="text-primary hover:underline decoration-2">More about me.</NextLink>
+                                Beside the digital stuff, I enjoy capturing moments with my cameras, explaining electric cars and go on a local hike. <NextLink href="/conversation-starter"  className="text-primary hover:underline decoration-2">More about me.</NextLink>
    
                             </Subline>
                             <div className="lg:hidden py-3">
@@ -67,10 +66,10 @@ export default function Home() {
                     </section>
                     <section className="py-3 md:py-6">
                         <SectionTitle>Now</SectionTitle>
-                        <a href="https://www.planb.net" className="hover:underline decoration-2" target="_blank">
+                        <a href="https://www.planb.net" target="_blank">
                             <WorkFrame title="Engineering Manager at PlanB." label="Empower developers, building software and consulting customers"/>
                                 </a>
-                                <NextLink href="/eaas" className="hover:underline decoration-2">
+                                <NextLink href="/eaas">
 
                                     <WorkFrame title="Equipment-as-a-Service Landscape" label="Researching industrial companies service offerings"/>
 
@@ -78,35 +77,35 @@ export default function Home() {
                     </section>
                     <section className="py-3 md:py-6">
                     <SectionTitle>Projects</SectionTitle>
-                        <NextLink prefetch={false} href="/productmode"  className="hover:underline decoration-2">
-                                    <WorkFrame title="Productmode"  className="hover:underline decoration-2" label="Using AI and Automation to build great software on the first try"/>
+                        <NextLink prefetch={false} href="/productmode" >
+                                    <WorkFrame title="Productmode"  label="Using AI and Automation to build great software on the first try"/>
                                 </NextLink>
-                                <a href="https://www.maxe.io"  className="hover:underline decoration-2" target="_blank">
+                                <a href="https://www.maxe.io"  target="_blank">
                       <WorkFrame title="Maxe Smart Service" label="Collaborative platform for better industrial after sales"/>
                   </a>
-                         <a href="https://www.workre.al"  className="hover:underline decoration-2">
-                            <WorkFrame title="WorkReal"  className="hover:underline decoration-2" label="Understand how teams at work are feeling"/>
+                         <a href="https://www.workre.al" >
+                            <WorkFrame title="WorkReal"  label="Understand how teams at work are feeling"/>
                          </a>
 
                    
                     </section>
                     <section className="py-3 md:py-6">
                     <SectionTitle>Past Experience</SectionTitle>
-                    <a href="https://www.conclurer.com"  className="hover:underline decoration-2" target="_blank">
+                    <a href="https://www.conclurer.com"  target="_blank">
                       <WorkFrame title="Co-Founder Conclurer" label="Build a low-code industry 4.0 software, consulted SMBs" />
                   </a>
 
 
 
-                  <a href="https://www.heidenheimerleben.de"  className="hover:underline decoration-2" target="_blank">
+                  <a href="https://www.heidenheimerleben.de"  target="_blank">
                       <WorkFrame title="HDH Erleben" label="Quickly launched a local livestream shopping experience"/>
                   </a>
-                  <a href="https://www.futureofmanufacturing.io"  className="hover:underline decoration-2" target="_blank">
+                  <a href="https://www.futureofmanufacturing.io"  target="_blank">
                       <WorkFrame title="Future of Manufacturing" label="Shared my knowledge as one of the first members"/>
                   </a>
                   <WorkFrame title="Kwest" label="Created Digital Manufacturing workshops for Kwest Inc."/>
                   <WorkFrame title="Nearstage" label="Founded and sold an up-selling ticketing solution for festivals"/>
-                  <a href="https://www.heidenheim.dhbw.de"  className="hover:underline decoration-2" target="_blank">
+                  <a href="https://www.heidenheim.dhbw.de"  target="_blank">
                       <WorkFrame title="Lecture Students" label="Teached about Supply Chain Management and Web-Programming"/>
                   </a>
                   <WorkFrame title="Bachelor Thesis" label="Researched Analytics dashboards for purchasing departments"/>

@@ -18,7 +18,7 @@ export default function Custom404({ content }) {
   return (
     <Layout>
       <Head>
-        <title>Imprint</title>
+        <title>Page not found (404)</title>
       </Head>
       <Page>
         <div className="pb-4">
