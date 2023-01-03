@@ -25,30 +25,30 @@ export default function Home() {
                 <NextImage src={blurDarkSvg} />
             </div>
         </div>
-          <Container size="max-w-5xl">
-            <div className="md:grid md:grid-cols-[1fr,2fr] md:gap-12 lg:gap-12 pt-6 md:pt-20 lg:pt-32">
+          <Container size="max-w-6xl">
+            <div className="md:grid md:grid-cols-[3fr,6fr] md:gap-12 lg:gap-12 pt-6 md:pt-20 lg:pt-32">
                <aside className="">
                 <div className="lg:sticky top-6 mb-6">
                     <div className="flex justify-center w-full md:mb-3">
-                        <figure className="profile-picture">
+                        <figure className="profile-picture md:w-full">
                         <NextImage
-                            width="443"
-                            height="640"
+                            width="400"
+                            height="578"
                             quality="75"
                             src={philipp}
                             alt="Philipp Reiner Portrait"
                             placeholder="blur"
-                            className="shadow-paper-700/20 dark:shadow-slate-900/90 shadow-lg md:rounded-lg rounded-full aspect-square md:aspect-auto object-cover object-top w-full max-w-[200px] md:max-w-none"
+                            className="shadow-paper-700/20 dark:shadow-slate-900/90 shadow-lg md:rounded-lg rounded-full aspect-square md:aspect-auto object-cover object-top w-full max-w-[220px] md:max-w-none"
                         />
                         <figcaption className="sr-only">Philipp Reiner an Engineering Manager at work.</figcaption>
                         </figure>
                     </div>
-                    <div className="lg:block hidden mt-6">
+                    <div className="hidden mt-6">
                         <Contacts direction={"col"}/>
                     </div>
                 </div>
                </aside>
-                <main className="">
+                <main className="lg:pr-[36px] xl:pr-[96px]">
                     <section className="md:pt-3">
                         <Tagline/>
                         <div className="py-3 md:py-6 lg:py-8">
@@ -56,10 +56,10 @@ export default function Home() {
                             Hi, I'm Philipp. My biggest strength is to understand complex challenges fast, break them down and find straight-forward solutions. I believe Software should make our life easier, not more complicated.
                             </Subline>
                             <Subline>
-                                Beside the digital stuff, I enjoy capturing moments with my cameras, explaining electric cars and go on a local hike. <NextLink href="/conversation-starter"  className="text-primary hover:underline decoration-2">More about me.</NextLink>
+                                Beside the digital stuff, I enjoy capturing moments with my cameras, explaining electric cars and go on a local hike. <NextLink href="/conversation-starter"  className="text-paper-800 dark:text-slate-500 hover:underline decoration-2">More about me.</NextLink>
    
                             </Subline>
-                            <div className="lg:hidden py-3">
+                            <div className="py-3">
                                 <Contacts/>
                             </div>
                         </div>
@@ -76,16 +76,14 @@ export default function Home() {
                                 </NextLink>
                     </section>
                     <section className="py-3 md:py-6">
-                    <SectionTitle>Projects</SectionTitle>
-                        <NextLink prefetch={false} href="/productmode" >
-                                    <WorkFrame title="Productmode"  label="Using AI and Automation to build great software on the first try"/>
+                    <SectionTitle>Exploring</SectionTitle>
+                    <NextLink prefetch={false} href="/productmode" >
+                                    <WorkFrame title="Productmode"  label="Using Automation and AI to build great software on the first try"/>
                                 </NextLink>
+
                                 <a href="https://www.maxe.io"  target="_blank">
-                      <WorkFrame title="Maxe Smart Service" label="Collaborative platform for better industrial after sales"/>
+                      <WorkFrame title="Maxe Smart Service" label="Collaborative platform that automates industrial after sales"/>
                   </a>
-                         <a href="https://www.workre.al" >
-                            <WorkFrame title="WorkReal"  label="Understand how teams at work are feeling"/>
-                         </a>
 
                    
                     </section>
@@ -94,8 +92,9 @@ export default function Home() {
                     <a href="https://www.conclurer.com"  target="_blank">
                       <WorkFrame title="Co-Founder Conclurer" label="Build a low-code industry 4.0 software, consulted SMBs" />
                   </a>
-
-
+                  <a href="https://www.workre.al" >
+                            <WorkFrame title="WorkReal"  label="Understand how teams at work are feeling (Mood Tracker)"/>
+                         </a>
 
                   <a href="https://www.heidenheimerleben.de"  target="_blank">
                       <WorkFrame title="HDH Erleben" label="Quickly launched a local livestream shopping experience"/>

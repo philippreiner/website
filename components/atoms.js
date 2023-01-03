@@ -56,7 +56,7 @@ export function SectionTitle({ children }) {
   return (
   <h2 className="flex items-center font-heading pb-2 md:pb-4 ">
     {children}
-    <ArrowLongRightIcon className="w-8 h-8 ml-1"/>
+    <ArrowLongRightIcon className="w-8 h-8 ml-1 pt-.5"/>
   </h2>
   );
 }

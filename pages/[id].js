@@ -56,7 +56,7 @@ export default function Project({ postData }) {
                     height="400"
                     src={postData.image}
                     alt={title}
-                    quality="70"
+                    quality="75"
                     className="object-cover rounded-lg"
                   />
                 </figure>

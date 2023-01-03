@@ -18,8 +18,5 @@ While you can learn about my work on [LinkedIn](https://www.linkedin.com/in/phil
 - The latest startup you didn't even hear about (yet)
 - Gaming Computers
 
-[I'm a photographer as well](/photography)
 
-## What I use
-
-Drop me a message and remind me to document my current homeoffice setup here.
+[Check out the stuff I use for work and photography](/stuff)
