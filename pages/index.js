@@ -56,7 +56,7 @@ export default function Home() {
                             Hi, I'm Philipp. My biggest strength is to understand complex challenges fast, break them down and find straight-forward solutions. I believe Software should make our life easier, not more complicated.
                             </Subline>
                             <Subline>
-                                Beside the digital stuff, I enjoy capturing moments with my cameras, explaining electric cars and go on a local hike. <NextLink href="/conversation-starter"  className="text-paper-800 dark:text-slate-500 hover:underline decoration-2">More about me.</NextLink>
+                                Beside work, I enjoy capturing moments with my cameras, explaining electric cars and go on a local hike. <NextLink href="/conversation-starter"  className="text-paper-800 dark:text-slate-500 hover:underline decoration-2">More about me.</NextLink>
    
                             </Subline>
                             <div className="py-3">
