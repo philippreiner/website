@@ -69,17 +69,22 @@ export default function Home() {
                         <a href="https://www.planb.net" target="_blank">
                             <WorkFrame title="Engineering Manager at PlanB." label="Empower developers, building software and consulting customers"/>
                                 </a>
-                                <NextLink href="/eaas">
 
-                                    <WorkFrame title="Equipment-as-a-Service Landscape" label="Researching industrial companies service offerings"/>
-
-                                </NextLink>
                     </section>
                     <section className="py-3 md:py-6">
                     <SectionTitle>Exploring</SectionTitle>
-                    <NextLink prefetch={false} href="/productmode" >
-                                    <WorkFrame title="Productmode"  label="Using Automation and AI to build great software on the first try"/>
-                                </NextLink>
+                    <NextLink href="/eaas">
+
+<WorkFrame title="Equipment-as-a-Service Landscape" label="Researching industrial companies service offerings"/>
+
+</NextLink>
+
+<NextLink href="/car-ui">
+
+<WorkFrame title="Driven by Software - Automotive UIs" label="Collecting trends in car software"/>
+
+</NextLink>
+
 
                                 <a href="https://www.maxe.io"  target="_blank">
                       <WorkFrame title="Maxe Smart Service" label="Collaborative platform that automates industrial after sales"/>
@@ -92,6 +97,9 @@ export default function Home() {
                     <a href="https://www.conclurer.com"  target="_blank">
                       <WorkFrame title="Co-Founder Conclurer" label="Build a low-code industry 4.0 software, consulted SMBs" />
                   </a>
+                  <NextLink prefetch={false} href="/productmode" >
+                                    <WorkFrame title="AI Product Owner"  label="Using Automation and AI to build great software on the first try"/>
+                                </NextLink>
                   <a href="https://www.workre.al" >
                             <WorkFrame title="WorkReal"  label="Understand how teams at work are feeling (Mood Tracker)"/>
                          </a>
