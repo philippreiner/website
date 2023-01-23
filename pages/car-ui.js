@@ -6,10 +6,11 @@ import { Container, Homelink} from "@components/atoms";
 import NextImage from "next/image"
 import Contacts from "@components/contacts"
 
-import landscape from '../public/share/eaas-landscape.jpg'
+import landscape from '../public/share/car-ui.jpg'
+
 
 export async function getStaticProps({ params }) {
-  const content = await getContent("eaas");
+  const content = await getContent("car-ui");
   return {
     props: {
       content,
@@ -21,35 +22,35 @@ export default function Eaas({ content }) {
   return (
     <Layout>
       <Head>
-        <title>EaaS & Service 4.0 Landscape</title>
-        <meta property="og:image" content="/share/eaas-landscape.jpg"/>
-        <meta property="og:image:alt" content="Overview image of eaas companies"/>
-        <meta property="og:title" content="Equipment-as-a-Service & Service 4.0 Landscape"/>
-        <meta name="description" content="Overview of 200+ manufacturing OEMs that lead Software and Service based business models e.g. Equipment-as-a-Service"/>
+        <title>Automotive HMI and future CAR Ui Moodboard</title>
+        <meta property="og:image" content="/share/car-ui.jpg"/>
+        <meta property="og:image:alt" content="Overview image with different car UI"/>
+        <meta property="og:title" content="Automotive HMI and future CAR Ui Moodboard"/>
+        <meta name="description" content="Current (2023) automotive and car user interfaces from tesla to volkswagen"/>
       </Head>
       
 	
       <Container size="max-w-screen-2xl">
         <div className="py-4 md:py-8 flex items-center justify-between flex-wrap">
           <Homelink/>
-          <h1 className="w-full md:w-auto md:text-paper-900 dark:md:text-slate-500 text-center pt-8 md:py-4 font-heading">The “Equipment-as-a-Service” Landscape</h1>
+          <h1 className="w-full md:w-auto md:text-paper-900 dark:md:text-slate-500 text-center pt-8 md:py-4 font-heading">“Driven by Software” Car UI Moodboard</h1>
         </div>
       </Container>
         <section className="p-1 md:px-4 md:pb-8 lg:py-12 lg:max-w-screen-2xl m-auto">
             <figure className="">
-              <a href="/share/eaas-landscape.jpg" target="_blank">
+              <a href="/share/car-ui.jpg" target="_blank">
               <NextImage
                 width="1920"
                 height="1080"
                 quality="75"
                 src={landscape}
-                alt="Infographic with industrial company logos clustered into subscription and software business models"
+                alt="Infographic listing "
                 placeholder="blur"
                 className="object-scale-down rounded shadow-paper-700/30 dark:shadow-slate-900/90 shadow-lg"
               />
               <span className="md:hidden text-center block pt-1 text-paper-500 dark:text-slate-500 text-xs">Click for 100%</span>
               </a>
-              <figcaption className="sr-only">Overview of 200+ manufacturing OEMs that lead Software and Service based business models e.g. Equipment-as-a-Service at Siemens</figcaption>
+              <figcaption className="sr-only">Overview of 20 infotainment UIs from car companies showing the lateset automotive car touch software trends.</figcaption>
             </figure>        
         </section>
 
