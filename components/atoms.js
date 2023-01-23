@@ -112,6 +112,6 @@ export function WorkFrame({ title, label, image }) {
     </div>
   );
 }
-Container.defaultProps = {
+WorkFrame.defaultProps = {
   image: "",
 };

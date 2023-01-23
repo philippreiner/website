@@ -5,10 +5,10 @@ import { Container, WorkFrame, Subline, SectionTitle} from "@components/atoms"
 import Contacts from "@components/contacts"
 import NextLink from "next/link";
 import { Tagline } from "@components/about";
+
 import philipp from '../public/static/reiner-web.jpg'
 import blurDarkSvg from '../public/static/blur-dark.svg'
 import blurLightSvg from '../public/static/blur-light.svg'
-import maxeLogo from  '../public/images/maxe-logo.svg'
 import carThumb from '../public/share/car-ui.jpg'
 import eaasThumb from '../public/share/eaas-landscape.jpg'
 
