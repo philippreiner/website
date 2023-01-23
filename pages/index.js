@@ -8,6 +8,9 @@ import { Tagline } from "@components/about";
 import philipp from '../public/static/reiner-web.jpg'
 import blurDarkSvg from '../public/static/blur-dark.svg'
 import blurLightSvg from '../public/static/blur-light.svg'
+import maxeLogo from  '../public/images/maxe-logo.svg'
+import carThumb from '../public/share/car-ui.jpg'
+import eaasThumb from '../public/share/eaas-landscape.jpg'
 
 export default function Home() {
   return (
@@ -75,13 +78,13 @@ export default function Home() {
                     <SectionTitle>Exploring</SectionTitle>
                     <NextLink href="/eaas">
 
-<WorkFrame title="Equipment-as-a-Service Landscape" label="Researching industrial companies service offerings"/>
+<WorkFrame title="Equipment-as-a-Service Landscape" label="Researching industrial companies service offerings" image={<NextImage src={eaasThumb} placeholder="blur" width="72" height="54"/>}/>
 
 </NextLink>
 
 <NextLink href="/car-ui">
 
-<WorkFrame title="Driven by Software - Automotive UIs" label="Collecting trends in car software"/>
+<WorkFrame title="Driven by Software - Automotive UIs" label="Collecting trends in car software" image={<NextImage src={carThumb} placeholder="blur" width="72" height="54"/>}/>
 
 </NextLink>
 
