@@ -101,7 +101,7 @@ export function WorkCard({ title, label }) {
 
 export function WorkFrame({ title, label, image }) {
   return (
-    <div className="py-3 md:py-3 md:px-6 md:-mx-6 md:hover:bg-paper-300 dark:md:hover:bg-slate-800 flex items-center space-beteween rounded group">
+    <div className="py-3 md:py-4 md:px-6 md:-mx-6 md:hover:bg-paper-300 dark:md:hover:bg-slate-800 flex items-center space-beteween rounded group">
       <div className="grow">
         <h3 className="font-heading block  decoration-2">{title}</h3>
         <span className="text-paper-900 dark:text-gray-500">{label}</span>

@@ -78,13 +78,13 @@ export default function Home() {
                     <SectionTitle>Exploring</SectionTitle>
                     <NextLink href="/eaas">
 
-<WorkFrame title="Equipment-as-a-Service Landscape" label="Researching industrial companies service offerings" image={<NextImage src={eaasThumb} placeholder="blur" width="72" height="54"/>}/>
+<WorkFrame title="Equipment-as-a-Service Landscape" label="Researching industrial companies service offerings" image={<NextImage src={eaasThumb} placeholder="blur" width="96" height="54"/>}/>
 
 </NextLink>
 
 <NextLink href="/car-ui">
 
-<WorkFrame title="Driven by Software - Automotive UIs" label="Collecting trends in car software" image={<NextImage src={carThumb} placeholder="blur" width="72" height="54"/>}/>
+<WorkFrame title="Driven by Software - Automotive UIs" label="Collecting trends in car software" image={<NextImage src={carThumb} placeholder="blur" width="96" height="54"/>}/>
 
 </NextLink>
 
