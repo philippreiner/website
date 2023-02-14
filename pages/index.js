@@ -116,7 +116,7 @@ export default function Home() {
                   <WorkFrame title="Kwest" label="Created Digital Manufacturing workshops for Kwest Inc."/>
                   <WorkFrame title="Nearstage" label="Founded and sold an up-selling ticketing solution for festivals"/>
                   <a href="https://www.heidenheim.dhbw.de"  target="_blank">
-                      <WorkFrame title="Lecture Students" label="Teached about Supply Chain Management and Web-Programming"/>
+                      <WorkFrame title="Lecture Students" label="Teaching Supply Chain Management and Programming"/>
                   </a>
                   <WorkFrame title="Bachelor Thesis" label="Researched Analytics dashboards for purchasing departments"/>
           
