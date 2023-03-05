@@ -69,8 +69,8 @@ export default function Home() {
                     </section>
                     <section className="py-3 md:py-6">
                         <SectionTitle>Now</SectionTitle>
-                        <a href="https://www.planb.net" target="_blank">
-                            <WorkFrame title="Engineering Manager at PlanB." label="Empower developers, building software and consulting customers"/>
+                        <a href="https://www.accenture.com" target="_blank">
+                            <WorkFrame title="Manager at Accenture" label="Leading transformation projects within the Speciality Finance Area"/>
                                 </a>
 
                     </section>
@@ -89,20 +89,27 @@ export default function Home() {
 </NextLink>
 
 
-                                <a href="https://www.maxe.io"  target="_blank">
-                      <WorkFrame title="Maxe Smart Service" label="Collaborative platform that automates industrial after sales"/>
-                  </a>
+
 
                    
                     </section>
                     <section className="py-3 md:py-6">
                     <SectionTitle>Past Experience</SectionTitle>
+                    <a href="https://www.planb.net" target="_blank">
+                            <WorkFrame title="Engineering Manager at PlanB." label="Empower developers, building software and consulting customers"/>
+                                </a>
                     <a href="https://www.conclurer.com"  target="_blank">
                       <WorkFrame title="Co-Founder Conclurer" label="Build a low-code industry 4.0 software, consulted SMBs" />
+                  </a>
+                  <a href="https://www.maxe.io"  target="_blank">
+                      <WorkFrame title="Maxe Smart Service" label="Collaborative platform that automates industrial after sales"/>
                   </a>
                   <NextLink prefetch={false} href="/productmode" >
                                     <WorkFrame title="AI Product Owner"  label="Using Automation and AI to build great software on the first try"/>
                                 </NextLink>
+                                <a href="https://www.heidenheim.dhbw.de"  target="_blank">
+                      <WorkFrame title="Lecture Students" label="Teaching Supply Chain Management and Programming"/>
+                  </a>
                   <a href="https://www.workre.al" >
                             <WorkFrame title="WorkReal"  label="Understand how teams at work are feeling (Mood Tracker)"/>
                          </a>
@@ -115,9 +122,7 @@ export default function Home() {
                   </a>
                   <WorkFrame title="Kwest" label="Created Digital Manufacturing workshops for Kwest Inc."/>
                   <WorkFrame title="Nearstage" label="Founded and sold an up-selling ticketing solution for festivals"/>
-                  <a href="https://www.heidenheim.dhbw.de"  target="_blank">
-                      <WorkFrame title="Lecture Students" label="Teaching Supply Chain Management and Programming"/>
-                  </a>
+
                   <WorkFrame title="Bachelor Thesis" label="Researched Analytics dashboards for purchasing departments"/>
           
                     </section>
