@@ -1,7 +1,7 @@
 import NextImage from "next/image";
 import Head from "next/head";
 import Layout from "@components/layout";
-import { Container, WorkFrame, Subline, SectionTitle} from "@components/atoms"
+import { Container, WorkFrame, PastWorkFrame, Subline, SectionTitle} from "@components/atoms"
 import Contacts from "@components/contacts"
 import NextLink from "next/link";
 import { Tagline } from "@components/about";
@@ -68,10 +68,18 @@ export default function Home() {
                         </div>
                     </section>
                     <section className="py-3 md:py-6">
-                        <SectionTitle>Now</SectionTitle>
+                        <SectionTitle>Experience</SectionTitle>
                         <a href="https://www.accenture.com" target="_blank">
-                            <WorkFrame title="Manager at Accenture" label="Leading transformation projects within the Speciality Finance Area"/>
+                            <WorkFrame 
+                            title={<>Manager at Accenture <span className="text-xs font-sans bg-paper-300 text-paper-700 py-1 px-1.5 ml-1.5 rounded">Now</span></>} 
+                            label="Leading transformation projects for specialty finance topics"/>
                                 </a>
+                        <a href="https://www.planb.net" target="_blank">
+                            <WorkFrame title={<>Engineering Manager at PlanB <span className="text-xs font-sans bg-paper-300 text-paper-700 py-1 px-1.5 ml-1.5 rounded">2020-2023</span></>} label="Empowered developers, building software and defined product strategies"/>
+                                </a>
+                        <a href="https://www.conclurer.com"  target="_blank">
+                      <WorkFrame title={<>Co-Founder Conclurer<span className="text-xs font-sans bg-paper-300 text-paper-700 py-1 px-1.5 ml-1.5 rounded">2011-2020</span></>} label="Delivered a low-code after-sales software for manufacturing OEMs" />
+                        </a>
 
                     </section>
                     <section className="py-3 md:py-6">
@@ -94,36 +102,32 @@ export default function Home() {
                    
                     </section>
                     <section className="py-3 md:py-6">
-                    <SectionTitle>Past Experience</SectionTitle>
-                    <a href="https://www.planb.net" target="_blank">
-                            <WorkFrame title="Engineering Manager at PlanB." label="Empower developers, building software and consulting customers"/>
-                                </a>
-                    <a href="https://www.conclurer.com"  target="_blank">
-                      <WorkFrame title="Co-Founder Conclurer" label="Build a low-code industry 4.0 software, consulted SMBs" />
+                    <SectionTitle>Projects</SectionTitle>
+                    
+                <a href="https://www.maxe.io"  target="_blank">
+                    <WorkFrame title="Maxe Smart Service" label="Collaborative platform that automates industrial after sales"/>
+                </a>
+                <NextLink href="/productmode" >
+                        <WorkFrame title="AI Product Owner"  label="Using Automation and AI to build great software on the first try"/>
+                 </NextLink>
+                <WorkFrame title="Quality Platform" label="Product Management for a new, unified manufacturing solution"/>
+                <WorkFrame title="B2B Shop" label="Product Management around various pricing and ordering apps"/>
+                <WorkFrame title="IoT App" label="Refined strategy for a IoT solution for regulated markets"/>
+                <WorkFrame title="Service Portals" label="Shipped monitoring, service and after-sales portals (B2B)"/>
+                <WorkFrame title="Maintenance Workflows" label="Build software to support maintenance tasks on the shopfloor"/>
+                <WorkFrame title="Cloud Hosting" label="Developed a 1-click deployment for an Open Source CMS"/>
+                <a href="https://www.heidenheim.dhbw.de"  target="_blank">
+                    <WorkFrame title="University Lecturer" label="Teaching Supply Chain Management and Web Programming"/>
+                </a>
+                <a href="https://www.workre.al" >
+                    <WorkFrame title="WorkReal"  label="Understand how teams at work are feeling (Mood Tracker)"/>
+                </a>
+                <a href="https://www.heidenheimerleben.de"  target="_blank">
+                      <WorkFrame title="Heidenheim Erleben" label="Launched a local livestream shopping experience during Covid"/>
                   </a>
-                  <a href="https://www.maxe.io"  target="_blank">
-                      <WorkFrame title="Maxe Smart Service" label="Collaborative platform that automates industrial after sales"/>
-                  </a>
-                  <NextLink prefetch={false} href="/productmode" >
-                                    <WorkFrame title="AI Product Owner"  label="Using Automation and AI to build great software on the first try"/>
-                                </NextLink>
-                                <a href="https://www.heidenheim.dhbw.de"  target="_blank">
-                      <WorkFrame title="Lecture Students" label="Teaching Supply Chain Management and Programming"/>
-                  </a>
-                  <a href="https://www.workre.al" >
-                            <WorkFrame title="WorkReal"  label="Understand how teams at work are feeling (Mood Tracker)"/>
-                         </a>
-
-                  <a href="https://www.heidenheimerleben.de"  target="_blank">
-                      <WorkFrame title="HDH Erleben" label="Quickly launched a local livestream shopping experience"/>
-                  </a>
-                  <a href="https://www.futureofmanufacturing.io"  target="_blank">
-                      <WorkFrame title="Future of Manufacturing" label="Shared my knowledge as one of the first members"/>
-                  </a>
-                  <WorkFrame title="Kwest" label="Created Digital Manufacturing workshops for Kwest Inc."/>
-                  <WorkFrame title="Nearstage" label="Founded and sold an up-selling ticketing solution for festivals"/>
-
-                  <WorkFrame title="Bachelor Thesis" label="Researched Analytics dashboards for purchasing departments"/>
+                <WorkFrame title="Future of Manufacturing" label="Created Digital Manufacturing workshops for a startup"/>
+                <WorkFrame title="Nearstage" label="Founded and sold an up-selling ticketing solution for festivals"/>
+                <WorkFrame title="Bachelor Thesis" label="Researched Analytics dashboards for purchasing departments"/>
           
                     </section>
                 </main>
