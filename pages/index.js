@@ -16,7 +16,7 @@ export default function Home() {
   return (
       <Layout>
         <Head>
-            <title>Philipp Reiner - Engineering Manager</title>
+            <title>Philipp Reiner - Management Consultant</title>
             <meta property="og:image" content="/static/reiner-web.jpg"/>
             <meta property="og:image:alt" content="Philipp Reiner Portrait"/>
         </Head>
