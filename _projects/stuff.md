@@ -7,7 +7,7 @@ image: '/images/home-office.jpg'
 ## 🧑‍💻 Computer
 I prefer working with Apple products but at work we still think that it's acceptable to have 2 hours of battery life with windows. So I'm using
 
-- MacBook Pro M116" for private coding, writing and image editing
+- MacBook Pro M1 16" for private coding, writing and image editing
 - HP zBook14 with enterprise stuff at work
 - Custom Build Gaming Computer
 - Huawai MateView 28" Monitor
