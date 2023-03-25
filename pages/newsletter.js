@@ -23,7 +23,7 @@ const Newsletters = ({ newsletters }) => {
   );
 };
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const API_KEY = process.env.NEXT_PUBLIC_BUTTONDOWN_API_KEY;
   let newsletters = [];
 
@@ -47,6 +47,7 @@ export async function getServerSideProps() {
     props: {
       newsletters,
     },
+    revalidate: 3600, // In seconds
   };
 }
 
