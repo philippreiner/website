@@ -24,7 +24,7 @@ const Newsletters = ({ newsletters }) => {
 };
 
 export async function getServerSideProps() {
-  const API_KEY = '973d4855-fa6b-480d-9b57-0a30a7967efe';
+  const API_KEY = process.env.NEXT_PUBLIC_BUTTONDOWN_API_KEY;
   let newsletters = [];
 
   try {
