@@ -28,17 +28,19 @@ export async function getStaticProps() {
   let newsletters = [];
 
   try {
-    const response = await axios.get(`https://api.buttondown.email/v1/emails?status=sent&page_size=100`, {
+    const response = await axios.get(`https://api.buttondown.email/v1/emails?status=sent&order=-published&page_size=100`, {
       headers: {
         Authorization: `Token ${API_KEY}`,
       },
     });
 
-    newsletters = response.data.results.map((newsletter) => ({
+    newsletters = response.data.results
+    .map((newsletter) => ({
       id: newsletter.id,
       title: newsletter.subject,
       url: newsletter.absolute_url,
-    }));
+    }))
+    .reverse();
   } catch (error) {
     console.error('Failed to fetch newsletters:', error.message);
   }
@@ -47,7 +49,7 @@ export async function getStaticProps() {
     props: {
       newsletters,
     },
-    revalidate: 3600, // In seconds
+    revalidate: false, // In seconds or false
   };
 }
 
