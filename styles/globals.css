@@ -14,7 +14,7 @@ body {
   background-color: #f7f4ef;
 }
 .font-heading {
-  font-family: "Figtree", system-ui, sans-serif;
+  font-family: "DM sans", system-ui, sans-serif;
   font-weight: 700 !important;
 }
 .icon svg{
@@ -24,4 +24,57 @@ body {
   .icon svg {
     fill:#fff;
   }
+}
+
+/* Define grid columns for the grid container */
+.grid-wrap {
+  display: grid;
+}
+
+.grid-container {
+  grid-column: 1 / -1;
+}
+
+.grid-content {
+  grid-column: 1 / -1;
+}
+
+.grid-full {
+  grid-column: 1 / -1;
+}
+
+/* Breakpoint for screens larger than or equal to 640px (sm) */
+@media (min-width: 640px) {
+  .grid-wrap {
+    grid-template-columns: 12px 2fr 12px 6fr 12px;
+  }
+  .grid-container {
+    grid-column: 2 / 5;
+  }
+
+  .grid-content {
+    grid-column: 4 / 5;
+  }
+}
+
+/* Breakpoint for screens larger than or equal to 768px (md) */
+@media (min-width: 768px) {
+  .grid-wrap {
+    grid-template-columns: 24px 2fr 24px 6fr 24px;
+  }
+}
+
+/* Breakpoint for screens larger than or equal to 1024px (lg) */
+@media (min-width: 1024px) {
+  .grid-wrap {
+    grid-template-columns: 1fr 3fr 1fr 8fr 1fr;
+  }
+}
+
+/* Breakpoint for screens larger than or equal to 1280px (xl) */
+@media (min-width: 1280px) {
+}
+
+/* Breakpoint for screens larger than or equal to 1536px (2xl) */
+@media (min-width: 1536px) {
 }

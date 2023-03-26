@@ -1,0 +1,24 @@
+{
+    "name": "Philipp Reiner",
+    "headline": "researches innovative business models, empowers software teams and always thinks about tomorrow.",
+    "subtitle": "Strategy & Technology",
+    "web": "https://www.philippreiner.info",
+    "content": "Hi, I\u2019m Philipp and I work at the intersection of technology and business. I will think ahead, anticipate trends, and break-down complex challenges. Imaging what could be possble excites me. \n\nStrategically-minded and technically skilled, I drive growth and innovation while collaborating with technical and non-technical individuals. Patience is not my greatest strength but together we can turn ideas into action. \n\nToday I\u2019m a manager at Accenture. Before that, I supported teams at PlanB, building B2B software. I also co-founded an IIoT startup, where I gained valuable experience in leadership, sales, and product development as our team grew to 15 people. \n\nBeyond work, I capture moments with my camera, like to drive electric cars, hike, and read about entrepreneurship and science-fiction.",
+    "contact": [
+        {
+            "title": "Email",
+            "url": "mailto:hey@philippreiner.info",
+            "icon": "email"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/philippreiner",
+          "icon": "linkedin"
+        },
+        {
+          "title": "Instagram",
+          "url": "https://www.instagram.com/philippreiner/",
+          "icon": "instagram"
+        }
+      ]
+}
