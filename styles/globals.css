@@ -20,6 +20,12 @@ body {
 .icon svg{
   fill:#000;
 }
+.markdown {
+  @apply text-black dark:text-white prose sm:prose-lg dark:prose-invert prose-a:text-primary dark:prose-a:text-highlight prose-a:font-bold;
+}
+.markdown > p {
+  margin-top: 0;
+}
 @media (prefers-color-scheme: dark) {
   .icon svg {
     fill:#fff;

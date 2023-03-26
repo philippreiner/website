@@ -71,7 +71,7 @@ export function SectionLine({className}) {
     const HeadingComponent = size || defaultSize;
 
     return (
-        <CustomHeading as={HeadingComponent} className={`text-xl md:text-2xl lg:text-3xl leading-normal font-heading ${className}`}>
+        <CustomHeading as={HeadingComponent} className={`text-xl md:text-2xl lg:text-3xl leading-normal font-heading${className}`}>
             {children}
         </CustomHeading>
     );
@@ -81,3 +81,13 @@ export function SectionLine({className}) {
     size: "h2"
   };
 
+  export function Card({children, className}) {
+    return (
+        <div className={`relative bg-paper-300 dark:bg-slate-700 rounded p-3 md:p-6 lg:p-8 ${className}`}>
+            {children}
+        </div>
+    );
+  }
+  Card.defaultProps = {
+    className: "",
+  };
