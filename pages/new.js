@@ -39,7 +39,7 @@ export default function Home({ bio}) {
                         <span className="text-primary dark:text-highlight">{about.name}</span>
                         &nbsp;{about.headline}
                     </Title>
-                    <Contacts className="md:pt-.5"/>
+                    <Contacts className="mt-3 md:mt-6"/>
                 </div>
             </SectionContent>
         </Section>        
@@ -110,7 +110,7 @@ export default function Home({ bio}) {
                         <div className="grow">
                             <h3 className="font-heading decoration-2 flex items-center">
                                 {ex.title} 
-                                <span className="text-xs font-sans bg-paper-300 text-paper-700 py-1 px-1.5 ml-1.5 rounded">{ex.time}</span>
+                                <span className="text-xs font-sans bg-paper-300 dark:bg-slate-800 dark:text-gray-300 text-paper-700 py-1 px-1.5 ml-1.5 rounded">{ex.time}</span>
                             </h3>
                             <span className="text-paper-800 dark:text-gray-500">{ex.desc}</span>
                         </div>
@@ -118,7 +118,7 @@ export default function Home({ bio}) {
             </NextLink>
             ))}
             <div className="mt-3 md:mt-6">
-                <NextLink className="font-bold text-primary dark:text-hightlight underline" href="/projects">
+                <NextLink className="font-bold text-primary dark:text-highlight underline" href="/projects">
                     View Projects
                 </NextLink>
             </div>

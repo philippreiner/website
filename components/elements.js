@@ -83,7 +83,7 @@ export function SectionLine({className}) {
 
   export function Card({children, className}) {
     return (
-        <div className={`relative bg-paper-300 dark:bg-slate-700 rounded p-3 md:p-6 flex flex-col items-center justify-center${className}`}>
+        <div className={`relative bg-paper-300 dark:bg-slate-800 rounded p-3 md:p-6 flex flex-col items-center justify-center${className}`}>
             {children}
         </div>
     );

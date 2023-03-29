@@ -31,7 +31,7 @@ export default function Layout({ children }) {
         <NextLink
           href="/impressum"
           prefetch={false}
-          className="dark:text-gray-500 text-paper-700 decoration-2 hover:underline">
+          className="dark:text-gray-500 text-paper-700 decoration-2 px-3 py-1.5 hover:bg-paper-300 dark:hover:bg-gray-700 rounded-full">
           Imprint & Privacy
         </NextLink>
       </div>
