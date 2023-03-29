@@ -1,7 +1,9 @@
 import { AtSymbolIcon } from "@heroicons/react/24/solid";
 import NextLink from "next/link";
 
-export function Contacts({ className, data }) {
+import { contact } from "_content/about";
+
+export function Contacts({ className }) {
   return (
     <ul className={`mt-3 md:mt-6 md:flex md:items-center space-y-4 md:space-y-0 md:space-x-4 lg:space-x-8 ${className}`}>
       <NextLink href="/newsletter">
@@ -9,7 +11,7 @@ export function Contacts({ className, data }) {
           Newsletter
         </li>
       </NextLink>
-      {data.contact.map((link, index) => (
+      {contact.map((link, index) => (
         <li key={index}>
           <a
             className="text-primary dark:text-highlight font-bold hover:underline"
