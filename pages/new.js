@@ -5,10 +5,10 @@ import Head from "next/head";
 import { getContent } from "../lib/content";
 
 import Layout from "@components/layout";
-import { Section, Card, Title, SectionContainer, SectionLine, SectionContent, SectionFull, Line} from "@components/elements";
+import { Section, Card, Title, SectionContainer, SectionLine, SectionContent} from "@components/elements";
 import { Contacts } from "@components/social";
-import { Container, WorkFrame, PastWorkFrame, Subline, SectionTitle} from "@components/atoms"
 
+import blurLightSvg from '../public/static/blur-light.svg'
 import { about, image, topics, experience} from "@content/about";
 
 export async function getStaticProps() {
@@ -32,6 +32,11 @@ export default function Home({ bio}) {
             <meta property="og:image" content="/static/reiner-web.jpg"/>
             <meta property="og:image:alt" content={`${about.name} Portrait`}/>
         </Head>
+        <div className="top-0 left-0 right-0 -z-10 fixed md:opacity-90">
+            <div className="dark:hidden">
+                <NextImage src={blurLightSvg} />
+            </div>
+        </div>
         <Section>
             <SectionContent>
                 <div className="my-6 mt-10 md:my-8 lg:my-10 lg:mt-16">

@@ -13,7 +13,7 @@ export default function Home({ allPostsData }) {
           <Container size="max-w-screen-md">
           <div className="py-4 md:py-8">
               <Homelink/>
-              <div className="pt-4 pb-2">I'm Philipp, an engineering manager for software with a focus on industrial services.</div>
+              <div className="pt-4 pb-2">I'm Philipp, a manager at Accenture with a focus on subscription business models.</div>
               <Contacts/>
               <div className="pt-4 md:pt-8">
               <h3 className="font-heading text-xl pb-2 md:pb-4">We probably talked about …</h3>
@@ -36,6 +36,7 @@ export default function Home({ allPostsData }) {
               <div className="pt-4 md:pt-8">
               <h3 className="font-heading text-xl pb-2 md:pb-4">We might have meet at …</h3>
                   <ul className="flex flex-col space-y-1.5">
+                      <li>Accenture S&C</li>
                       <li>DigiServ Network Events</li>
                       <li>Ostalb Hackathon 2022</li>
                       <li>Make OW 2022</li>

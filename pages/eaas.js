@@ -23,8 +23,8 @@ export default function Eaas({ content }) {
       <Head>
         <title>EaaS & Service 4.0 Landscape</title>
         <meta property="og:image" content="/share/eaas-landscape.jpg"/>
-        <meta property="og:image:alt" content="Overview image of eaas companies"/>
-        <meta property="og:title" content="Equipment-as-a-Service & Service 4.0 Landscape"/>
+        <meta property="og:image:alt" content="Overview image of equipment as a service companies"/>
+        <meta property="og:title" content="Equipment-as-a-Service & Service 4.0 Overview & Examples"/>
         <meta name="description" content="Overview of 200+ manufacturing OEMs that lead Software and Service based business models e.g. Equipment-as-a-Service"/>
       </Head>
       
