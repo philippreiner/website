@@ -80,7 +80,7 @@ const Newsletters = ({ newsletters, desc }) => {
           <label for="bd-email" className=''>Your Email</label>
           <input type="email" name="email" id="bd-email" className='border-none bg-white/20 dark:bg-paper-400 p-3 md:py-3.5 rounded'/>
           <div>
-            <input type="submit" value="Submit & Subscribe" className='bg-paper-100 text-black p-3 md:px-6 rounded cursor-pointer hover:bg-paper-300 dark:bg-primary dark:text-white dark:hover:bg-black dark:hover:text-white md:flex-inline w-auto'/>
+            <input type="submit" value="Submit & Subscribe" className='bg-paper-100 text-black p-3 md:px-6 rounded-full cursor-pointer hover:bg-paper-300 dark:bg-primary dark:text-white dark:hover:bg-black dark:hover:text-white md:flex-inline w-auto'/>
           </div>
           <input type="hidden" name="tag" value="friend" />
           <p className='opacity-50 text-xs md:pt-3' dangerouslySetInnerHTML={{ __html: content.disclaimer }}></p>
