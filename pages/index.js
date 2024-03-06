@@ -5,26 +5,35 @@ import Head from "next/head";
 import { getContent } from "../lib/content";
 
 import Layout from "@components/layout";
-import { Section, Card, Title, SectionContainer, SectionLine, SectionContent} from "@components/elements";
+import {
+  Section,
+  Card,
+  Title,
+  SectionContainer,
+  SectionLine,
+  SectionContent,
+} from "@components/elements";
 import { Contacts } from "@components/social";
 
-import blurLightSvg from '../public/static/blur-light.svg'
-import { about, image, topics, experience} from "@content/about";
+import blurLightSvg from "../public/static/blur-light.svg";
+import { about, image, topics, experience } from "@content/about";
 
 export async function getStaticProps() {
-    // Get markdown content
-    const bio = await getContent("about");
+  // Get markdown content
+  const bio = await getContent("about");
 
   // Pass the data as props
-    return {
+  return {
     props: {
-        bio
-        },
-    };
-  }
+      bio,
+    },
+  };
+}
 
-export default function Home({ bio}) {
-    const title = `${about.name} - ${about.subtitle}`;
+export default function Home({ bio }) {
+  const title = `${about.name} - ${about.subtitle}`;
+
+  redirect("https://www.philippreiner.com");
   return (
       <Layout>
         <Head>
@@ -133,4 +142,3 @@ export default function Home({ bio}) {
       </Layout>
   );
 }
-

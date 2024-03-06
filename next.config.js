@@ -11,6 +11,15 @@ module.exports = {
             }
         ];
     },
+    async redirects() {
+        return [
+          {
+            source: '/',
+            destination: 'https://www.philippreiner.com',
+            permanent: true,
+          },
+        ]
+      },
     swcMinify: true,
     webpack: (config, { dev, isServer }) => {
         // Replace React with Preact only in client production build
