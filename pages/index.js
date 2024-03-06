@@ -33,7 +33,6 @@ export async function getStaticProps() {
 export default function Home({ bio }) {
   const title = `${about.name} - ${about.subtitle}`;
 
-  redirect("https://www.philippreiner.com");
   return (
       <Layout>
         <Head>
